@@ -1,9 +1,10 @@
-let n = 150;
+let a = 1;
+const n = 140;
 let sum = 1;
 
-while (n > 0) {
-    sum += n;
-    n -= 1;
+while (a < n) {
+    sum += a;
+    a++;
 }
 
 console.log('Result: ' + sum);

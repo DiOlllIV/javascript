@@ -3,7 +3,7 @@ const n = 140;
 let sum = 0;
 let result = 0;
 
-while (a < n) {
+while (a <= n) {
     result += a;
     a++;
 }

@@ -7,7 +7,7 @@ console.log("a == b: ", a == b);
 console.log("a != b: ", a != b);
 
 console.log("'a' < 'b': ", 'a' < 'b');
-console.log("'ab' > 'b': ", 'ab' > 'b');
+console.log("'ab' > 'a': ", 'ab' > 'a');
 
 console.log("17 === 1: ", 17 === 1);
 console.log("17 === 17: ", 17 === 17);

@@ -8,7 +8,7 @@ const isLoggedIn = Boolean(userName);
 
 const activeUser = anotherUser || defaultUserName;
 const hasAccess = isAdmin != isLoggedIn;
-isTruthy = message < anotherMessage;
-isFalsy = !isLoggedIn;
-isNotTrue = typeof message === 'number';
+let isTruthy = message < anotherMessage;
+let isFalsy = !isLoggedIn;
+let isNotTrue = typeof message === 'number';
 const isTrue = typeof message != 'boolean';

@@ -1,5 +1,5 @@
 let age = 18;
-
+let amount = 17;
 
 if (true) console.log('I\'m in');
 
@@ -29,5 +29,5 @@ if (age < 16) {
 }
 
 // Тернаный оператор ? : ( const result = условие ? значение1 : значение2; )
-let amount = 17;
+
 const result = amount > 17 ? 'full' : 'empty';

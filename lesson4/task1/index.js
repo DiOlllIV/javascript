@@ -6,8 +6,9 @@ let result = 1;
 while (a < n) {
     result += a;
     a++;
+    sum = result;
 }
-sum = result;
+
 
 
 console.log('Result: ' + sum);

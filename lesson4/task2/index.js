@@ -1,5 +1,6 @@
 const m = 2;
 const n = 12;
+let i;
 let result = 1;
 
 for (i = m; i <= n; i++) {
@@ -7,5 +8,3 @@ for (i = m; i <= n; i++) {
         result *= i;
     }
 }
-
-console.log('Result: ' + result);

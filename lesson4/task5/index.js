@@ -7,15 +7,12 @@ for (i = 0; i <= n; i++) {
 
     if (i % 2 == 0) {
         result += i;
-        console.log(result);
 
     } else if (i / 3 == 0) {
         result -= i;
-        console.log(result);
 
     } else if (i / 4 == 0) {
         result *= i;
-        console.log(result);
 
     }
     if (i % 5 == 0) {

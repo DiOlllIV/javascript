@@ -1,5 +1,10 @@
+let result = 0;
 for (i = 0; i < 1000; i++) {
     if (i % 2 == 1) {
-        console.log("Found")
+        console.log("Found");
+        result += i;
     }
+    if (result * 5 > 5000) {
+        console.log("Bigger");
+    } else console.log("Smaller or equal");
 }

@@ -8,17 +8,13 @@ for (i = 0; i <= n; i++) {
     sum += i;
     if (i % 2 == 0 && i % 4 == 1) {
         sum += 2;
-
-
     }
     if (i / 3 == 0) {
         sum -= 3;
-
-
     }
     if (i / 4 == 0) {
         sum *= 4;
-
+        continue;
     }
 
 

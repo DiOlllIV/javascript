@@ -6,10 +6,13 @@ let result = 0;
 for (i = 0; i <= n; i++) {
     if (i == 2 && i !== 4) {
         result = i + 2;
+        console.log(result);
     } else if (i == 3) {
         result = i - 3;
+        console.log(result);
     } else if (i == 4) {
         result = i * 4;
+        console.log(result);
     } else if (i % 5 == 0) {
         console.log(i)
     }

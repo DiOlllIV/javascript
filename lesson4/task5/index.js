@@ -1,5 +1,5 @@
 const m = 2;
-const n = 10;
+const n = 15;
 let i = m;
 let result = 0;
 
@@ -15,5 +15,6 @@ for (i = 0; i <= n; i++) {
 
     if (i % 5 == 0) {
         console.log(i);
+        continue;
     }
 }

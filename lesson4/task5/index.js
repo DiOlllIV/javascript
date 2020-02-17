@@ -3,18 +3,17 @@ const n = 15;
 let i = m;
 let result = 0;
 
-for (i = 0; i <= n; i++) {
+for (i = m; i <= n; i++) {
     if (i % 2 == 0 && i % 4 == 1) {
-        result += 2;
+        result += i;
     } else if (i % 3 == 0) {
-        result -= 3;
+        result -= i;
     } else if (i % 4 == 0) {
-        result *= 4;
+        result *= i;
 
     }
 
     if (i % 5 == 0) {
         console.log(i);
-        continue;
     }
 }

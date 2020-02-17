@@ -10,4 +10,5 @@ res = sum;
 sum %= 1234;
 res -= sum;
 
-const result = res > sum ? true : false;
+console.log(res > sum);
+console.log(res < sum);

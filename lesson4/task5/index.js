@@ -5,14 +5,19 @@ let result = 0;
 
 for (i = 0; i <= n; i++) {
 
-    if (i % 2 == 0) {
+    if (i % 2 == true) {
         result += i;
 
-    } else if (i / 3 == 0) {
+
+    }
+    if (i / 3 == true) {
         result -= i;
 
-    } else if (i / 4 == 0) {
+
+    }
+    if (i / 4 == true) {
         result *= i;
+
 
     }
     if (i % 5 == 0) {

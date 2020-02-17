@@ -8,15 +8,18 @@ for (i = 0; i <= n; i++) {
     result = i;
     if (i % 2 == 0) {
         sum += i;
-        continue;
+        console.log(sum);
+
     } else if (i / 3 == 0) {
-        sum -= 3;
-        continue;
+        sum -= i;
+        console.log(sum);
+
     } else if (i / 4 == 0) {
-        sum *= 4;
-        continue;
+        sum *= i;
+        console.log(sum);
+
     } else if (i % 5 == 0) {
-        console.log(i)
+        console.log(i);
     }
 
     result = sum;

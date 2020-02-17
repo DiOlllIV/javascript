@@ -6,13 +6,13 @@ let result = 0;
 
 for (i = 0; i <= n; i++) {
     result = i;
-    if (i == 2 && i != 4) {
+    if (i % 2 == 0) {
         sum += i;
         continue;
-    } else if (i == 3) {
+    } else if (i / 3 == 0) {
         sum -= 3;
         continue;
-    } else if (i == 4) {
+    } else if (i / 4 == 0) {
         sum *= 4;
         continue;
     } else if (i % 5 == 0) {

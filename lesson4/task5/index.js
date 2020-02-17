@@ -1,5 +1,5 @@
 const m = 2;
-const n = 10;
+const n = 15;
 let i = m;
 let sum = 0;
 let result;
@@ -7,13 +7,13 @@ let result;
 for (i = 0; i <= n; i++) {
     sum += i;
     if (i % 2 == 0 && i % 4 == 1) {
-        sum += 2;
+        sum += i;
     }
-    if (i / 3 == 0) {
-        sum -= 3;
+    if (i % 3 == 0) {
+        sum -= i;
     }
-    if (i / 4 == 0) {
-        sum *= 4;
+    if (i % 4 == 0) {
+        sum *= i;
         continue;
     }
 

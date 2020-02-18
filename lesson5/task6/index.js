@@ -1,14 +1,14 @@
-let i = 1;
+let i = 2;
 let j = 1;
 
 function isPrimes(n) {
-    for (i = 2; i <= n; i++) {
+    for (i; i <= n; i++) {
         if (n % i === 0)
             return false;
-        else
-            return true;
+        return true;
     }
-    console.log(i);
+
+
 }
 
 
@@ -22,4 +22,4 @@ function getPrimes(n) {
         }
     }
 }
-getPrimes(11);
+getPrimes(5);

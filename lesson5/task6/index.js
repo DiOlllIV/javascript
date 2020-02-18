@@ -7,7 +7,7 @@ function isPrimes(n) {
 
 
 function getPrimes(n) {
-    for (let j = 1; j <= n; j++) {
+    for (let j = 2; j <= n; j++) {
 
         if (isPrimes(j)) {
             console.log(j);

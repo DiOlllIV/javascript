@@ -22,3 +22,5 @@ function compareSums(a, b, c, d) {
     else
         return false;
 }
+
+compareSums(5, 2, 3, 1);

@@ -2,16 +2,15 @@ let i = 1;
 let j = 1;
 
 function isPrimes(n) {
-
-    for (i; i <= n; i++) {
-
-        if (i % n === 0)
+    for (i = 2; i <= n; i++) {
+        if (n % i === 0)
             return false;
-        else return true;
+        else
+            return true;
     }
-
+    console.log(i);
 }
-isPrimes(11);
+
 
 function getPrimes(n) {
 

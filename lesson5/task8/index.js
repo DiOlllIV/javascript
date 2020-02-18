@@ -6,7 +6,7 @@ function sum(from, to) {
             res += i;
         }
     } else
-        for (i = from; i >= to; i--) {
+        for (let i = from; i >= to; i--) {
             res += i;
         }
 

@@ -14,10 +14,8 @@ function sum(from, to) {
 }
 
 function compareSums(a, b, c, d) {
-    let res1 = sum(a, b);
-    let res2 = sum(c, d);
 
-    if (res1 > res2)
+    if (sum(c, d) > sum(a, b))
         return true;
     else
         return false;

@@ -2,13 +2,10 @@ let i = 2;
 let j = 1;
 
 function isPrimes(n) {
-    for (i; i <= n; i++) {
+    for (i; i <= n; i++)
         if (n % i === 0)
             return false;
-        return true;
-    }
-
-
+    return true;
 }
 
 

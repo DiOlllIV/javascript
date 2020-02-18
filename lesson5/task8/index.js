@@ -1,15 +1,15 @@
 function sum(from, to) {
     let res = 0;
 
-    if (from < to) {
-        for (i = from; i <= to; i++) {
+    /* if (from < to) { */
+    for (i = from; i <= to; i++) {
+        res += i;
+    }
+    //}  else
+    /*for (i = from; i >= to; i--) {
             res += i;
         }
-    } else
-        for (i = from; i >= to; i--) {
-            res += i;
-        }
-
+ */
     return res;
 }
 
@@ -23,4 +23,4 @@ function compareSums(a, b, c, d) {
         return false;
 }
 
-compareSums(5, 2, 3, 1);
+compareSums(1, 2, 3, 4);

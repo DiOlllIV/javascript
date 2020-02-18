@@ -1,15 +1,15 @@
 function sum(from, to) {
     let res = 0;
 
-    if (from < to) {
-        for (i = from; i <= to; i++) {
-            res += i;
-        }
-    } else
+    /* if (from < to) { */
+    for (i = from; i <= to; i++) {
+        res += i;
+    }
+    /* } else
         for (i = from; i >= to; i--) {
             res += i;
         }
-
+ */
     return res;
 }
 

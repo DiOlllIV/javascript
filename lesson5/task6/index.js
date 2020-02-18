@@ -1,8 +1,5 @@
-let i = 2;
-let j = 1;
-
 function isPrimes(n) {
-    for (i; i <= n; i++)
+    for (let i = 2; i < n; i++)
         if (n % i === 0)
             return false;
     return true;
@@ -11,7 +8,7 @@ function isPrimes(n) {
 
 function getPrimes(n) {
 
-    for (j; j <= n; j++) {
+    for (let j = 2; j <= n; j++) {
 
         if (isPrimes(j)) {
 
@@ -19,4 +16,4 @@ function getPrimes(n) {
         }
     }
 }
-getPrimes(5);
+getPrimes(37);

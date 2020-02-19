@@ -5,8 +5,8 @@ function getSum(arr) {
         return null;
     }
 
-    for (let sum of arr) {
-        sumOfNumbers += sum;
+    for (let i; i < arr.length; i++) {
+        sumOfNumbers += arr[i];
     }
     return sumOfNumbers;
 }

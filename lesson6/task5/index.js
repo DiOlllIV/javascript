@@ -3,7 +3,7 @@
 function squareArray(arr) {
     let arrayInSquare = [];
 
-    if (!Array.isArray) {
+    if (!Array.isArray(arr)) {
         return null;
     }
 

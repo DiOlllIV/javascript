@@ -1,6 +1,6 @@
 function uniqueCount(array) {
-    let unique = 1;
-    for (let i = 0; i <= array.length - 1; ++i) {
+    let unique = 0;
+    for (let i = 0; i < array.length; ++i) {
 
         let element = array[i];
 

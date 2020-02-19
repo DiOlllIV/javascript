@@ -1,6 +1,6 @@
 /* const arr = [1, 2, 3, 4];  */
 
-function reversArray(arr) {
+function reverseArray(arr) {
     if (!Array.isArray(arr)) {
         return null;
     }

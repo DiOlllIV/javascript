@@ -1,6 +1,6 @@
 function uniqueCount(array) {
     let unique = 0;
-    for (let i = 0; i < array.length; ++i) {
+    for (let i = 1; i < array.length; ++i) {
 
         let element = array[i];
 
@@ -9,10 +9,10 @@ function uniqueCount(array) {
                 unique++;
             }
         }
-
+        console.log(unique);
     }
     return unique;
 
 }
 
-console.log(uniqueCount([3, 4, 6, 3, 11, 6, 5, 7, 6, 44, 11, 1]));
+console.log(uniqueCount([1, 2, 3, 1, 2, 3, 5, 4, 4, 6, 7, 1]));

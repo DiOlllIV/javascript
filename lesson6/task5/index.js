@@ -7,7 +7,7 @@ function squareArray(arr) {
         return null;
     }
 
-    for (let i = 1; i <= arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         arrayInSquare.push(Math.pow(i, 2));
     }
 

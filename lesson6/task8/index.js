@@ -16,5 +16,5 @@ function uniqueCount(array) {
     return unique;
 
 }
-
-console.log(uniqueCount([1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 1, 6]));
+/* 
+console.log(uniqueCount([1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 1, 6])); */

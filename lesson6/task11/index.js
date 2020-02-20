@@ -11,7 +11,7 @@ function checker(arr) {
             maxNum = arr[i];
     }
 
-    if (minNum + maxNum > 1000)
+    if (minNum + maxNum >= 1000)
         return true;
     else
         return false;

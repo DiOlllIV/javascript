@@ -1,19 +1,19 @@
 function checker(arr) {
-    let minNum = arr[0];
-    let maxNum = arr[0];
+    let min = arr[0];
+    let max = arr[0];
 
     for (i = 0; i < arr.length; i++) {
 
-        if (minNum > arr[i])
-            minNum = arr[i];
+        if (min > arr[i])
+            min = arr[i];
 
-        if (maxNum < arr[i])
-            maxNum = arr[i];
+        if (max < arr[i])
+            max = arr[i];
     }
 
-    let sum = minNum + maxNum;
+    let sum = min + max;
 
-    if (sum >= 1000)
+    if (sum > 1000)
         return true;
     else
         return false;

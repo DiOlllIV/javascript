@@ -15,5 +15,5 @@ function uniqueCount(array) {
     return arrayOfUniques.length;
 
 }
-
-console.log(uniqueCount([1, 2, 3, 1, 2, 3, 10, 11, 3]));
+/* 
+console.log(uniqueCount([1, 2, 3, 1, 2, 3, 10, 11, 3])); */

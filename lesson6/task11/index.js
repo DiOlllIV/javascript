@@ -3,9 +3,10 @@ function checker(arr) {
     let maxNum = arr[0];
 
     for (i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
+
         if (minNum > arr[i])
             minNum = arr[i];
+
         if (maxNum < arr[i])
             maxNum = arr[i];
     }

@@ -2,7 +2,7 @@ function checker(arr) {
     let minNum = arr[0];
     let maxNum = arr[0];
 
-    for (i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
 
         if (minNum > arr[i])
             minNum = arr[i];

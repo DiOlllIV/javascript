@@ -16,5 +16,5 @@ function checker(arr) {
     else
         return false;
 }
-
-console.log(checker([5, 7, 88, 10, 4, 3, 6]))
+/* 
+console.log(checker([5, 7, 88, 10, 4, 3, 6])) */

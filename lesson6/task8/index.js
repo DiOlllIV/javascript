@@ -1,5 +1,4 @@
 function uniqueCount(array) {
-    let sumOfDoubles = 0;
     let arrayOfUniques = [];
 
     for (let i = 0; i < array.length; ++i) {

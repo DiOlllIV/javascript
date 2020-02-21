@@ -1,23 +1,23 @@
 function getMin(arr) {
-    let minNum = arr[0];
+    let min = arr[0];
 
     for (let i = 0; i < arr.length; i++) {
-        if (minNum > arr[i])
-            minNum = arr[i];
+        if (arr[i] < min)
+            min = arr[i];
     }
 
-    return minNum;
+    return min;
 }
 
 function getMax(arr) {
-    let maxNum = arr[0];
+    let max = arr[0];
 
     for (i = 0; i < arr.length; i++) {
-        if (maxNum < arr[i])
-            maxNum = arr[i];
+        if (arr[i] > max)
+            max = arr[i];
     }
 
-    return maxNum;
+    return max;
 }
 
 console.log(getMin([5, 7, 88, 10, 4, 3, 6]));

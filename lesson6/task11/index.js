@@ -4,17 +4,15 @@ function checker(arr) {
 
     for (let i = 0; i < arr.length; i++) {
 
-        if (minNum > arr[i])
+        if (arr[i] < minNum)
             minNum = arr[i];
 
-        if (maxNum < arr[i])
+        if (arr[i] > maxNum)
             maxNum = arr[i];
     }
 
-    if (minNum + maxNum > 1000)
-        return true;
-    else
-        return false;
+    return minNum + maxNum > 1000;
+
 }
 /* 
 console.log(checker([5, 7, 88, 10, 4, 3, 6])) */

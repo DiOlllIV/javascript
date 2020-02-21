@@ -1,4 +1,4 @@
-function searchUnique(array, num) {
+function includes(array, num) {
     for (let i = 0; i < array.length; ++i) {
         if (array[i] === num)
             return true;
@@ -6,16 +6,16 @@ function searchUnique(array, num) {
 }
 
 function uniqueCount(array) {
-    let arrayOfUniques = [];
+    let uniques = [];
 
     for (let j = 0; j < array.length; ++j) {
 
-        if (!searchUnique(arrayOfUniques, array[j])) {
-            arrayOfUniques.push(array[j]);
+        if (!includes(uniques, array[j])) {
+            uniques.push(array[j]);
         }
     }
 
-    return arrayOfUniques.length;
+    return uniques.length;
 }
 
 console.log(uniqueCount([1, 2, 3, 1, 2, 3, 10, 11, 3]));

@@ -1,12 +1,8 @@
-function squareArray(array) {
-    let arraySquare = [];
+const squareArray = square =>
 
-    for (let i = 0; i < array.length; ++i) {
+    square.reduce((acc, element) =>
+        acc.concat(element * element), []);
 
-        arraySquare.push(array[i] * array[i]);
-    }
-
-    return arraySquare;
-}
-/* 
-console.log(squareArray([1, 2, 3, 4, 7, 99])); */
+/* const arr = [1, 2, 3, 4, 7, 99];
+console.log(squareArray(arr));
+console.log(arr); */

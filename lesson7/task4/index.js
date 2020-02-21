@@ -1,4 +1,4 @@
-let getMessagesForBestStudents = (allStudents, failedStudents) =>
-    allStudents
-    .filter(name => !failedStudents.includes(name))
-    .map(name => 'Good job, ' + name);
+const getMessagesForBestStudents = (students, failedStudens) =>
+    students
+    .filter(name => !failedStudens.includes(name))
+    .map(name => 'Good job ' + name);

@@ -1,14 +1,14 @@
 const getAdults = users => {
-    let adults = {};
+    let object = {};
 
     for (key in users) {
         if (users[key] >= 18) {
 
-            adults[key] = users[key];
+            object[key] = users[key];
         }
     }
 
-    return adults;
+    return object;
 };
 
 const users = {
@@ -18,4 +18,4 @@ const users = {
 }
 
 /* console.log(getAdults(users));
-console.log(users); */
+console.log(users);  */

@@ -1,21 +1,21 @@
 const getAdults = users => {
-    let object = {};
+    let adults = {};
 
     for (key in users) {
         if (users[key] >= 18) {
 
-            object[key] = users[key];
+            adults[key] = users[key];
         }
     }
 
-    return object;
+    return adults;
 };
 
-const users = {
+/* const users = {
     'Joe': 19,
     'Tom': 17,
     'Bob': 18,
-}
+} */
 
 /* console.log(getAdults(users));
-console.log(users);  */
+console.log(users); */

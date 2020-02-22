@@ -1,7 +1,7 @@
 const getAdults = users => {
     let adults = {};
 
-    for (key in users) {
+    for (let key in users) {
         if (users[key] >= 18) {
 
             adults[key] = users[key];

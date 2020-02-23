@@ -4,6 +4,7 @@ const getRandomNumbers = (length, start, end) => {
 
     const arr = [];
     arr.length = length;
+
     return arr.fill().map(num =>
         Math.floor(Math.random() * (end - start) + start));
 };

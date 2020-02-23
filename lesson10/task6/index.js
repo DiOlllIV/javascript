@@ -6,8 +6,8 @@ const getRandomNumbers = (length, start, end) => {
     arr.length = length;
 
     return arr.fill().map(num =>
-        Math.floor(Math.random() * (end - start) + start));
+        Math.floor(Math.random() * (end - start + 1) + start));
 };
 
 
-/* console.log(getRandomNumbers(10, 1.4, 14.5)); */
+console.log(getRandomNumbers(5, 1.4, 7));

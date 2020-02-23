@@ -1,7 +1,7 @@
-const getFiniteNumber = arr =>
+const getFiniteNumbers = arr =>
     arr.filter(num => Number.isFinite(num));
 
-const getFiniteNumberV2 = arr =>
+const getFiniteNumbersV2 = arr =>
     arr.filter(num => isFinite(num));
 
 const getNaN = arr =>

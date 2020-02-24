@@ -9,7 +9,7 @@ const countOccurrences = (str, findStr) => {
     while (true) {
         let foundPos = str.indexOf(findStr, pos);
 
-        if (foundPos == 0)
+        if (foundPos == -1)
             break;
 
         sum++;

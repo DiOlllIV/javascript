@@ -1,6 +1,6 @@
 const countOccurrences = (str, findStr) => {
 
-    if (str === '')
+    if (findStr === '')
         return null;
 
     let sum = 0;

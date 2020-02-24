@@ -5,5 +5,5 @@
         return string.split('').reverse().join('');
     };
 
-    let text = 'Some text here';
-    console.log(reverseString(text));
+    /* let text = 'Some text here';
+    console.log(reverseString(text)); */

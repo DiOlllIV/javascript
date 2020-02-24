@@ -17,7 +17,7 @@ const splitString = (string, len = 10) => {
         if (chunk.length < len)
             chunk += '.'.repeat(len - chunk.length)
 
-        strArr.push(chunk.slice());
+        strArr.push(chunk);
         start += len;
     }
 

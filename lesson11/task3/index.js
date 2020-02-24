@@ -7,7 +7,7 @@ const splitString = (string, len = 10) => {
     let start = 0;
 
     while (true) {
-        let chunk = text.substr(start, len);
+        let chunk = string.substr(start, len);
 
         if (chunk.length === 0)
             break;
@@ -24,6 +24,6 @@ const splitString = (string, len = 10) => {
     return strArr;
 };
 
-/* 
-let text = "Lorem Ipsum s simpy dunny text of the printing and typesetting index has been the industry's standard dummy text ever since the 1500s.";
+
+/* let text = "Lorem Ipsum s simpy dunny text of the printing and typesetting index has been the industry's standard dummy text ever since the 1500s.";
 console.log(splitString(text, 3)); */

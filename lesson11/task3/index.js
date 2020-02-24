@@ -7,7 +7,7 @@ const splitString = (string, len = 10) => {
     let start = 0;
 
     while (true) {
-        let chunk = text.substring(start, len);
+        let chunk = text.substr(start, len);
 
         if (chunk.length === 0)
             break;

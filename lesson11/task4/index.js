@@ -1,4 +1,4 @@
-const countOccurrences = (findStr, str) => {
+const countOccurrences = (str, findStr) => {
 
     if (str === '')
         return null;
@@ -9,7 +9,7 @@ const countOccurrences = (findStr, str) => {
     while (true) {
         let foundPos = str.indexOf(findStr, pos);
 
-        if (foundPos == -1)
+        if (foundPos == 0)
             break;
 
         sum++;
@@ -17,8 +17,9 @@ const countOccurrences = (findStr, str) => {
     }
 
     return sum;
+
 };
 
 
-/* let text = "Lorem Ipsum s simpy dunny text of the printing and typesetting index has been the industry's standard dummy text ever since the 1500s.";
+/* let text = " Lorem Ipsum s simpy dunny text of the printing and typesetting index has been the industry's standard dummy text ever since the 1500s.";
 console.log(countOccurences('s', text)); */

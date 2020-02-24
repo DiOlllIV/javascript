@@ -1,4 +1,4 @@
-const countOccurences = (findStr, str) => {
+const countOccurrences = (findStr, str) => {
 
     if (str === '')
         return null;

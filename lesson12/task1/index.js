@@ -22,7 +22,7 @@ const calc = expression => {
     return `${expression} = ${result}`;
 }
 
-console.log(calc('1 + 2'));
+/* console.log(calc('1 + 2'));
 console.log(calc('1 - 2'));
 console.log(calc('1 * 2'));
-console.log(calc('1 / 2'));
+console.log(calc('1 / 2')); */

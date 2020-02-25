@@ -1,7 +1,7 @@
 export default createMessenger = () => {
 
     let message = 'Just learn it!';
-    const sender = 'Gromcode';
+    let sender = 'Gromcode';
 
     function sendMessage(name) {
 

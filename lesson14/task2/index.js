@@ -9,11 +9,11 @@ export default createMessenger = () => {
     };
 
     const setMessage = text => {
-        message = text.bold();
+        message = text;
     };
 
     const setSender = text => {
-        sender = text.bold();
+        sender = text;
     };
 
     return {

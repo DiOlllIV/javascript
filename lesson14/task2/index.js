@@ -3,16 +3,16 @@ export default createMessenger = () => {
     let message = 'Just learn it!';
     const sender = 'Gromcode';
 
-    function sendMessage(name) {
+    const sendMessage = name => {
 
         console.log(`${name}, ${message} Your ${sender}`)
     };
 
-    function setMessage(text) {
+    const setMessage = text => {
         message = text.bold();
     };
 
-    function setSender(text) {
+    const setSender = text => {
         sender = text.bold();
     };
 

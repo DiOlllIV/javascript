@@ -1,4 +1,4 @@
-function getSum(a, b) {
+export function getSum(a, b) {
     let sum = 0;
     let i;
     for (i = a; i <= b; i++) {
@@ -8,4 +8,4 @@ function getSum(a, b) {
     }
     return sum;
 }
-getSum(2, 7);
+/* getSum(2, 7); */

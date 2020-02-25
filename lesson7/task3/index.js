@@ -1,4 +1,4 @@
-const flatArray = arr =>
+export const flatArray = arr =>
     arr
     .reduce((acc, element) =>
         acc.concat(element), []);

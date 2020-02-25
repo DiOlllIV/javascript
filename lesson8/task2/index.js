@@ -1,4 +1,4 @@
-const concatProps = obj => {
+export const concatProps = obj => {
     let arr = [];
 
     for (let key in obj) {

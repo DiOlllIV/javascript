@@ -1,4 +1,4 @@
-const getAdults = users => {
+export const getAdults = users => {
     let adults = {};
 
     for (let key in users) {

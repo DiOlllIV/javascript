@@ -1,10 +1,9 @@
-    function increaser(a, index) {
+    export function increaser(a, indx) {
 
-        if (a > index) {
-            return a + index;
-        }
-
-        return a;
+        if (a > indx)
+            return a + indx;
+        else
+            return a;
     }
 
-    increaser(6, 4);
+    /* increaser(6, 4); */

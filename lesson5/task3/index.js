@@ -1,9 +1,10 @@
-function getEvenOdd(num) {
-    if (num % 2 === 0) {
-        return 'even'
-    } else {
-        return "odd"
-    }
+export function getEvenOdd(num) {
+
+    if (num % 2 === 0)
+        return 'even';
+    else
+        return "odd";
+
 }
 
-getEvenOdd(7);
+/* getEvenOdd(7); */

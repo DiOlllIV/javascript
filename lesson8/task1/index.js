@@ -1,4 +1,4 @@
-const transformToObject = arr => {
+export const transformToObject = arr => {
     let obj = {};
 
     arr.forEach(element => {
@@ -8,5 +8,5 @@ const transformToObject = arr => {
     return obj;
 };
 
-const arr = ['name', 'Tom', '22', 'value'];
-console.log(transformToObject(arr));
+/* const arr = ['name', 'Tom', '22', 'value'];
+console.log(transformToObject(arr)); */

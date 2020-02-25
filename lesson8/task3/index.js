@@ -1,4 +1,4 @@
-const pickProps = (obj, arr) => {
+export const pickProps = (obj, arr) => {
 
     let object = {};
 

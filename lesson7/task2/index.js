@@ -1,4 +1,4 @@
-const sortDesc = elements =>
+export const sortDesc = elements =>
     elements.slice().sort((a, b) => b - a);
 
 

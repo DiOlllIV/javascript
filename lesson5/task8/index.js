@@ -1,4 +1,4 @@
-function sum(from, to) {
+export function sum(from, to) {
     let res = 0;
 
     if (from < to) {
@@ -14,7 +14,7 @@ function sum(from, to) {
 }
 
 
-function compareSums(a, b, c, d) {
+export function compareSums(a, b, c, d) {
     let res1 = sum(a, b);
     let res2 = sum(c, d);
 

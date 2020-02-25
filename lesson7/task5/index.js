@@ -1,4 +1,4 @@
-    const squareArray = (square) => {
+    export const squareArray = (square) => {
 
         if (!Array.isArray(square))
             return null;

@@ -8,11 +8,11 @@ export default function createMessenger() {
         console.log(`${name}, ${message} Your ${sender}`);
     };
 
-    function setMessage(text) {
+    const setMessage = text => {
         message = text.bold();
     };
 
-    function setSender(text) {
+    const setSender = text => {
         sender = text.bold();
     };
 
@@ -23,4 +23,4 @@ export default function createMessenger() {
     };
 };
 
-const message = createMessenger();
+/* const message = createMessenger(); */

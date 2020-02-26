@@ -1,8 +1,5 @@
 export function createLogger() {
 
-    const warn = warn();
-    const error = error();
-    const log = log();
     let message = '';
     let loggerArr = [];
 
@@ -37,6 +34,10 @@ export function createLogger() {
     function getRecords() {
         return loggerArr.sort((acc, rec) => (acc.dataTime - rec.dataTime));
     };
+
+    const warn = warn();
+    const error = error();
+    const log = log();
 
     return {
         warn,

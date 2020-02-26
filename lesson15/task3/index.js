@@ -31,7 +31,7 @@ export function createLogger() {
 
     };
 
-    function getRecords() {
+    function getRecords(type) {
         return loggerArr.sort((acc, rec) => (acc.dataTime - rec.dataTime));
     };
 

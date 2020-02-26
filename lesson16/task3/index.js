@@ -11,7 +11,7 @@ function createArrayOfFunctions(num) {
     if (typeof num !== 'number')
         return null;
 
-    if (num === undefined)
+    if (num == undefined)
         return [];
 
     return arr;

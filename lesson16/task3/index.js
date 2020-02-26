@@ -1,7 +1,8 @@
 function createArrayOfFunctions(num) {
-    let arr = [];
 
-    for (let i = 0; i < 10; i++) {
+    let arr = [num];
+
+    for (let i = 0; i < num; i++) {
         arr[i] = function() {
             return i;
         };
@@ -12,6 +13,8 @@ function createArrayOfFunctions(num) {
 
     if (num === undefined)
         return [];
+
+    return arr;
 };
 
 export { createArrayOfFunctions };

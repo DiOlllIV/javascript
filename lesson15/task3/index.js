@@ -35,10 +35,6 @@ export function createLogger() {
         return loggerArr.sort((acc, rec) => (acc.dataTime - rec.dataTime));
     };
 
-    const warn = warn();
-    const error = error();
-    const log = log();
-
     return {
         warn,
         error,

@@ -5,7 +5,7 @@ function createArrayOfFunctions(num) {
     if (typeof num !== 'number')
         return null;
 
-    let arr = [];
+    let arr = [num];
 
     for (let i = 0; i < num; i++) {
         arr[i] = function() {

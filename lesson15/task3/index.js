@@ -32,7 +32,7 @@ export function createLogger() {
 
     function getRecords(type) {
         if (type !== undefined)
-            return loggerArr.filter(elem => elem.type === type).sort((acc, rec) => (acc.dateTime > rec.dateTime));
+            return loggerArr.filter(elem => elem.type === type);
         return loggerArr.sort((acc, rec) => (acc.dateTime > rec.dateTime));
     };
 

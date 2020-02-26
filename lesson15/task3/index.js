@@ -31,8 +31,6 @@ export function createLogger() {
     };
 
     function getRecords(type) {
-        if (type !== undefined)
-            return loggerArr.filter(elem => elem.type === type);
         return loggerArr.sort((acc, rec) => (acc.dateTime > rec.dateTime));
     };
 

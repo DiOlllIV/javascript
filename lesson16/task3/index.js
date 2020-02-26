@@ -1,18 +1,17 @@
 function createArrayOfFunctions(num) {
 
-    let arr = [num];
+    if (num == undefined)
+        return [];
+    if (typeof num !== 'number')
+        return null;
+
+    let arr = [];
 
     for (let i = 0; i < num; i++) {
         arr[i] = function() {
             return i;
         };
     }
-
-    if (typeof num !== 'number')
-        return null;
-
-    if (num == undefined)
-        return [];
 
     return arr;
 };

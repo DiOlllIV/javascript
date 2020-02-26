@@ -1,5 +1,8 @@
 export function createLogger() {
 
+    const warn = warn();
+    const error = error();
+    const log = log();
     let message = '';
     let loggerArr = [];
 

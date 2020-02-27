@@ -11,3 +11,5 @@ function bind(func, context) {
         return func.apply(context, bindArgs.concat(funcArgs));
     };
 };
+
+export { bind };

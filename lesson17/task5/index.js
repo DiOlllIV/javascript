@@ -8,18 +8,19 @@ let timer = {
 
         this.loopID = setInterval(() => {
 
-            this.secondsPassed += 5;
+            this.secondsPassed++;
             if (this.secondsPassed === 60) {
                 this.secondsPassed = 0;
                 this.minsPassed++;
             }
 
-        }, 5000);
+        }, 1000);
     },
 
     getTime() {
 
-        return `${this.minsPassed}:${this.secondsPassed < 10 ? '0' + this.secondsPassed : this.secondsPassed}`;
+        return `${this.minsPassed}:${this.secondsPassed < 10 ?
+             '0' + this.secondsPassed : this.secondsPassed}`;
     },
 
     stopTimer() {

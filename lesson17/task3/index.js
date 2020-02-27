@@ -15,5 +15,5 @@ const user = {
 };
 
 /* const deferHi = defer(user.sayHi, 2000);
-deferHi.apply(name); */
+deferHi.apply(user); */
 export { defer };

@@ -6,6 +6,6 @@ let user = {
     },
 };
 
-user.getFullName();
+/* user.getFullName(); */
 
 export { user };

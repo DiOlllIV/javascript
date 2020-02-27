@@ -1,4 +1,4 @@
-/******   return a new function   ******/
+/******   Return a new function   ******/
 
 function bind(func, context) {
     //cut func and context

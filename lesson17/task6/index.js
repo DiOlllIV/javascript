@@ -1,3 +1,5 @@
+/******   return a new function   ******/
+
 function bind(func, context) {
     //cut func and context
     let bindArgs = [].slice.call(arguments, 2);

@@ -1,3 +1,4 @@
+/****** Timer ******/
 let timer = {
 
     secondsPassed: 0,

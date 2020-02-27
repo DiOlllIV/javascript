@@ -33,3 +33,5 @@ let timer = {
         this.secondsPassed = 0;
     }
 };
+
+export { timer };

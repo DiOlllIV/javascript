@@ -2,10 +2,10 @@ let user = {
     lastName: 'Doe',
     firstName: 'John',
     getFullName() {
-        console.log(`${this.firstName} ${this.lastName}`)
+        return `${this.firstName} ${this.lastName}`;
     },
 };
 
-/* user.getFullName(); */
+user.getFullName();
 
 export { user };

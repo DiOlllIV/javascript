@@ -7,8 +7,6 @@ const vehicle = {
     stop() {
         return `${this.name} is stopped`;
     },
-
-    __proto__: ship,
 };
 
 const ship = {
@@ -23,9 +21,9 @@ const ship = {
         this.stop();
         return `${this.name} lifting anchor down`;
     },
-
-    __proto__: vehicle,
 };
+
+Object.setPrototypeOf(vehicle, ship);
 
 
 

@@ -9,7 +9,7 @@ const event = {
 
     getInvitations() {
         return this.quests
-            .filter(({ age }) => age >= 18)
+            .filter(elem => elem.age >= 18)
             .map(({ name, email }) =>
                 ({
                     email,

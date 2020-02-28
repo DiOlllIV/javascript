@@ -7,6 +7,8 @@ const vehicle = {
     stop() {
         return `${this.name} is stopped`;
     },
+
+    __proto__: ship,
 };
 
 const ship = {

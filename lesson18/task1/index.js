@@ -1,9 +1,9 @@
 const event = {
     quests: [
-        { name: 'Tom', email: 'tom@gmail.com', age: 16 },
-        { name: 'James', email: 'james@gmail.com', age: 34 },
-        { name: 'Jason', email: 'jason@gmail.com', age: 28 },
-        { name: 'Stas', email: 'stas@gmail.com', age: 18 },
+        { name: 'Tom', age: 16, email: 'tom@gmail.com' },
+        { name: 'James', age: 34, email: 'james@gmail.com' },
+        { name: 'Jason', age: 28, email: 'jason@gmail.com' },
+        { name: 'Stas', age: 18, email: 'stas@gmail.com' },
     ],
     message: 'Welcome to the party!',
 

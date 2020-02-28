@@ -1,4 +1,4 @@
-const user = {
+export default user = {
     firstName: 'John',
     lastName: 'Doe',
 
@@ -12,6 +12,3 @@ const user = {
         this.lastName - lastName;
     }
 }
-
-
-export { user };

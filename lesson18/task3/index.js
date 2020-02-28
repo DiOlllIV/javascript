@@ -3,9 +3,8 @@
 function sumOfSquares() {
 
     return [...arguments]
-        .reduce((acc, curr) => {
-            return acc + curr ** 2;
-        }, 0);
+        .reduce((acc, curr) =>
+            (acc + curr ** 2));
 };
 
 

@@ -1,5 +1,5 @@
 const wallet = {
-    transactions: [33, 565, 678, 23, 55, 77, 007],
+    transactions: [33, 565, 678, 23, 55, 77, 7],
 
     getMax() {
         return Math.max(...this.transactions);

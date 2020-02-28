@@ -5,7 +5,7 @@ const vehicle = {
     },
 
     stop() {
-        console.log(`${this.name} is stopped`);
+        console.log(`${this.name} stopped`);
     },
 };
 
@@ -18,7 +18,7 @@ const ship = {
     },
 
     stopMachine() {
-        this.stop().
+        this.stop();
         console.log(`${this.name} lifting anchor down`);
     },
 };

@@ -1,9 +1,10 @@
+'use strict';
+
 function sumOfSquares() {
 
     return [...arguments]
-        .map(num => num * num)
         .reduce((acc, curr) =>
-            (acc + curr));
+            (acc + curr ** 2), 0);
 };
 
 

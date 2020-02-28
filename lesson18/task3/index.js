@@ -1,8 +1,10 @@
 function sumOfSquares() {
 
-    return [...arguments].map(num => {
-        return num * num;
-    }, 0);
+    return [...arguments]
+        .map(num => num * num)
+        .reduce((acc, curr) =>
+            (acc + curr));
 };
+
 
 export { sumOfSquares };

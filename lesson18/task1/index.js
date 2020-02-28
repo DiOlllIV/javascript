@@ -1,6 +1,6 @@
 const event = {
     message: 'Welcome to the party!',
-    quests: [
+    guests: [
         { name: 'Tom', age: 16, email: 'tom@gmail.com' },
         { name: 'James', age: 34, email: 'james@gmail.com' },
         { name: 'Jason', age: 28, email: 'jason@gmail.com' },
@@ -8,7 +8,7 @@ const event = {
     ],
 
     getInvitations() {
-        return this.quests
+        return this.guests
             .filter(({ age }) => age >= 18)
             .map(({ name, email }) =>
                 ({

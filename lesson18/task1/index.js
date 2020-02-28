@@ -18,7 +18,6 @@ const event = {
     },
 };
 
-console.log(event.getInvitations());
-
+/* console.log(event.getInvitations()); */
 
 export { event };

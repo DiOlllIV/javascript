@@ -5,7 +5,7 @@ const event = {
         { name: 'Jason', email: 'jason@gmail.com', age: 28 },
         { name: 'Stas', email: 'stas@gmail.com', age: 18 },
     ],
-    message: 'Welcome to the party',
+    message: 'Welcome to the party!',
 
     getInvitations() {
         return this.quests
@@ -13,7 +13,7 @@ const event = {
             .map(({ name, email }) =>
                 ({
                     email,
-                    message: `Hi ${name}! ${this.message}!`
+                    message: `Hi ${name}! ${this.message}`
                 }));
     },
 };

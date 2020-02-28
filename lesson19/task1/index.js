@@ -23,7 +23,7 @@ const ship = {
     },
 };
 
-Object.setPrototypeOf(vehicle, ship);
+Object.setPrototypeOf(ship, vehicle);
 
 
 

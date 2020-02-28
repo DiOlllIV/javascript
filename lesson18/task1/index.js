@@ -9,15 +9,15 @@ const event = {
 
     getInvitations() {
         return this.quests
-            .filter(elem => elem.age >= 18)
+            .filter(({ age }) => age >= 18)
             .map(({ name, email }) =>
                 ({
                     email,
-                    message: `Hi ${name}! ${this.message}`
+                    message: `Dear ${name}! ${this.message}`
                 }));
     },
 };
 
-/* console.log(event.getInvitations()); */
+console.log(event.getInvitations());
 
 export { event };

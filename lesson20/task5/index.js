@@ -27,11 +27,11 @@ class UserRepository {
     }
 
     getUserNames() {
-        return this._users.filter(key => key._name);
+        return this._users.map(key => key._name);
     };
 
     getUserIds() {
-        return this._users.filter(key => key._id);
+        return this._users.map(key => key._id);
     };
 
     getUserNameById(id) {

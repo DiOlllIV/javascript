@@ -19,7 +19,7 @@ class User {
         this.age = value;
 
         if (value >= 25)
-            return this.requestNewPhoto();
+            console.log(`New photo request was sent for ${this.name}`);
 
         return values;
     };

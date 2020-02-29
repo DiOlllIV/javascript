@@ -18,20 +18,20 @@ class User {
 };
 
 
-class UserRepository extends User {
-    constructor(arr) {
-        this._users = Object.freeze(arr)
+class UserRepository {
+    constructor(users) {
+        this._users = Object.freeze(users)
     };
     get users() {
         return this._users;
     }
 
     getUserNames() {
-        return this.users.filter(key => key.this._name);
+        return this.users.filter(key => key._name);
     };
 
     getUserIds() {
-        return this.users.filter(key => key.this._id);
+        return this.users.filter(key => key._id);
     };
 
     getUserNameById(id) {

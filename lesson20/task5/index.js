@@ -27,18 +27,18 @@ class UserRepository {
     }
 
     getUserNames() {
-        return this.users.filter(key => key._name);
+        return this._users.filter(key => key._name);
     };
 
     getUserIds() {
-        return this.users.filter(key => key._id);
+        return this._users.filter(key => key._id);
     };
 
     getUserNameById(id) {
 
         for (let user of this._users) {
-            if (user.id === this._id)
-                return this._name;
+            if (user.id === id)
+                return user.name;
         }
     };
 

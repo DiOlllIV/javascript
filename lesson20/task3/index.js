@@ -3,11 +3,11 @@ class Wallet {
 
     getBalance() {
         return this._balance;
-    };
+    }
 
     deposite(amount) {
         this._balance += amount;
-    };
+    }
 
     withdraw(amount) {
         if (amount > this._balance) {
@@ -16,8 +16,8 @@ class Wallet {
         }
 
         this._balance -= amount;
-    };
-};
+    }
+}
 
 
 

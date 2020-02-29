@@ -5,7 +5,7 @@ class Wallet {
         return this.#balance;
     }
 
-    deposite(amount) {
+    deposit(amount) {
         this.#balance += amount;
     }
 

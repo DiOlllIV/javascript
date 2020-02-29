@@ -14,7 +14,7 @@ class User {
 class UserRepository extends User {
     users = [].push({ User });
 
-    getUserName() {
+    getUserNames() {
         this.users.filter(key => key.this.#name);
     };
 

@@ -37,7 +37,7 @@ class UserRepository extends User {
     getUserNameById(id) {
 
         for (let user of this._users) {
-            if (id === this._id)
+            if (user.id === this._id)
                 return this._name;
         }
     };

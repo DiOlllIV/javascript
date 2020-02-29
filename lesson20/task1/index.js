@@ -6,11 +6,11 @@ class User {
 
     sayHi() {
         console.log(`$Hi, I am ${this.name}`);
-    }
+    };
 
     requestNewPhoto() {
         console.log(`New photo request was sent for ${this.name}`);
-    }
+    };
 
     setAge(value) {
         if (value < 0)
@@ -22,7 +22,7 @@ class User {
             this.requestNewPhoto();
 
         return values;
-    }
+    };
 
     static createEmpty() {
         return new this('', null);

@@ -1,18 +1,18 @@
 class User {
     constructor(id, name, sessionId) {
-        this.#id = id;
-        this.#name = name;
-        this.#sessionId = sessionId;
+        this._id = id;
+        this._name = name;
+        this._sessionId = sessionId;
     };
 
-    get id(){
-        return this.#id;
+    get id() {
+        return this._id;
     };
-    get name(){
-        return this.#name;
+    get name() {
+        return this._name;
     };
-    get sessionId(){
-        return this.#sessionId;
+    get sessionId() {
+        return this._sessionId;
     }
 
 };
@@ -20,25 +20,25 @@ class User {
 
 class UserRepository extends User {
     constructor(arr) {
-        this.#users = Object.freeze(arr)
+        this._users = Object.freeze(arr)
     };
-    get users(){
-        return this.#users;
+    get users() {
+        return this._users;
     }
 
     getUserNames() {
-        return this.users.filter(key => key.this.#name);
+        return this.users.filter(key => key.this._name);
     };
 
     getUserIds() {
-        return this.users.filter(key => key.this.#id);
+        return this.users.filter(key => key.this._id);
     };
 
     getUserNameById(id) {
-        
-        for(let user of this.#users){
-            if (id === this.#id)
-                return this.#name;
+
+        for (let user of this._users) {
+            if (id === this._id)
+                return this._name;
         }
     };
 

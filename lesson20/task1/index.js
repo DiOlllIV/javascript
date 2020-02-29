@@ -5,7 +5,7 @@ class User {
     }
 
     sayHi() {
-        console.log(`$Hi, I am ${this.name}`);
+        console.log(`Hi, I am ${this.name}`);
     };
 
     requestNewPhoto() {

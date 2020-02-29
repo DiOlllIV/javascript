@@ -1,16 +1,16 @@
 class Wallet {
-    _balace = 0;
+    _balance = 0;
 
     getBalance() {
-        return this._balace;
+        return this._balance;
     };
 
     deposite(amount) {
-        this._balace += amount;
+        this._balance += amount;
     };
 
     withdraw(amount) {
-        if (amount > this._balace) {
+        if (amount > this._balance) {
             console.log('No enough funds');
             return false;
         }

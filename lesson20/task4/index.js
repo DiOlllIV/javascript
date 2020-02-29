@@ -10,7 +10,7 @@ class Order {
         this.isConfirmed = false;
     }
 
-    checkPricec() {
+    checkPrice() {
         if (this.price > 1000)
             return true;
         else return false;

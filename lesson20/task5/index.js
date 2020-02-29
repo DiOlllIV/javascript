@@ -28,3 +28,7 @@ class UserRepository extends User {
     };
 
 }
+
+
+
+export {User, UserRepository}

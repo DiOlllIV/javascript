@@ -19,9 +19,9 @@ class User {
         this.age = value;
 
         if (value >= 25)
-            console.log(`New photo request was sent for ${this.name}`);
+            this.requestNewPhoto();
 
-        return values;
+        return value;
     };
 
     static createEmpty() {

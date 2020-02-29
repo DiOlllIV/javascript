@@ -28,3 +28,7 @@ class User {
         return new this('', null);
     }
 };
+
+
+
+export { User };

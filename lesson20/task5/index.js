@@ -1,34 +1,32 @@
 class User {
-    #id;
-    #name;
-    #sessionId;
-
     constructor(id, name, sessionId) {
-        this.#id = id.toString();
-        this.#name = name.toString();
-        this.#sessionId = sessionId.toString();
-    }
+        this._id = id.toString();
+        this._name = name.toString();
+        this._sessionId = sessionId.toString();
+    };
 };
 
 
 class UserRepository extends User {
-    users = [].push({ User });
+    constructor(arr) {
+        this._users = Object.freeze(arr)
+    };
 
     getUserNames() {
-        this.users.filter(key => key.this.#name);
+        this.users.filter(key => key.this._name);
     };
 
     getUserIds() {
-        this.users.filter(key => key.this.#id);
+        this.users.filter(key => key.this._id);
     };
 
     getUserNameById(id) {
-        if (id === this.#id)
-            return this.#name;
+        if (id === this._id)
+            return this._name;
     };
 
 }
 
 
 
-export {User, UserRepository}
+export { User, UserRepository }

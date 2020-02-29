@@ -19,7 +19,7 @@ class User {
         this.age = value;
 
         if (value >= 25)
-            this.requestNewPhoto();
+            return this.requestNewPhoto();
 
         return values;
     };

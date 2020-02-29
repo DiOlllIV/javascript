@@ -15,16 +15,16 @@ class UserRepository extends User {
     users = [].push({ User });
 
     getUserName() {
-        this.users.filter(key => key.this.name);
+        this.users.filter(key => key.this.#name);
     };
 
     getUserIds() {
-        this.users.filter(key => key.this.id);
+        this.users.filter(key => key.this.#id);
     };
 
     getUserNameById(id) {
-        if (id === this.id)
-            return this.name;
+        if (id === this.#id)
+            return this.#name;
     };
 
 }

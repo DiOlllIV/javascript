@@ -3,7 +3,7 @@ const pElem = document.querySelector('.rect_p');
 const spanElem = document.querySelector('.rect_span');
 const clearBtn = document.querySelector('.clear-btn');
 const attachBtn = document.querySelector('.attach-handlers-btn');
-const removeBtn = document.querySelector('.remove-handlers-btn')
+const removeBtn = document.querySelector('.remove-handlers-btn');
 const eventsListElem = document.querySelector('.events-list');
 
 const logTarget = (text, color) => {
@@ -20,13 +20,15 @@ const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
 
 const attachEventsList = () => {
     divElem.addEventListener('click', logGreyDiv, { capture: true });
-    pElem.addEventListener('click', logGreyP, true);
-    spanElem.addEventListener('click', logGreySpan, true);
-
     divElem.addEventListener('click', logGreenDiv);
+
+    pElem.addEventListener('click', logGreyP, true);
     pElem.addEventListener('click', logGreenP);
+
+    spanElem.addEventListener('click', logGreySpan, true);
     spanElem.addEventListener('click', logGreenSpan);
 };
+attachEventsList();
 const pushToAttach = attachEventsList;
 attachBtn.addEventListener('click', pushToAttach);
 
@@ -43,7 +45,7 @@ const removeEventsList = () => {
 
 };
 const pushToRemove = removeEventsList;
-removeBtn.removeEventListener('click', pushToRemove);
+removeBtn.addEventListener('click', pushToRemove);
 
 const clearEventsList = () => {
     eventsListElem.innerHTML = '';

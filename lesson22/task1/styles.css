@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.rect {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+}
+
+.rect_div {
+    width: 300px;
+    height: 300px;
+    margin-top: 16px;
+    background-color: coral;
+}
+
+.rect_p {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.rect_span {
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+}
+
+.events-list {
+    flex-direction: row;
+    height: 100px;
+    margin: 16px;
+    padding: 8px;
+    justify-content: start;
+    overflow: auto;
+}
+
+.btn {
+    min-width: 64px;
+    height: 32px;
+    margin: 0 0 0 16px;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    cursor: pointer;
+}

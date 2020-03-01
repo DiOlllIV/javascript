@@ -18,15 +18,6 @@ const logGreyDiv = logTarget.bind(null, 'DIV', 'grey');
 const logGreyP = logTarget.bind(null, 'P', 'grey');
 const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
 
-divElem.addEventListener('click', logGreyDiv, { capture: true });
-divElem.addEventListener('click', logGreenDiv);
-
-pElem.addEventListener('click', logGreyP, true);
-pElem.addEventListener('click', logGreenP);
-
-spanElem.addEventListener('click', logGreySpan, true);
-spanElem.addEventListener('click', logGreenSpan);
-
 const attachEventsList = () => {
     divElem.addEventListener('click', logGreyDiv, { capture: true });
     divElem.addEventListener('click', logGreenDiv);
@@ -37,6 +28,7 @@ const attachEventsList = () => {
     spanElem.addEventListener('click', logGreySpan, true);
     spanElem.addEventListener('click', logGreenSpan);
 };
+attachEventsList();
 const pushToAttach = attachEventsList;
 attachBtn.addEventListener('click', pushToAttach);
 

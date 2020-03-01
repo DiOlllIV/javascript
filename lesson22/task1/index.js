@@ -27,20 +27,16 @@ const attachEventsList = () => {
     pElem.addEventListener('click', logGreenP);
     spanElem.addEventListener('click', logGreenSpan);
 };
-
 const pushToAttach = attachEventsList;
 attachBtn.addEventListener('click', pushToAttach);
 
 
 /* does not work, why? */
 const removeEventsList = () => {
-    divElem.removeEventListener('click', logGreyDiv, { capture: false });
-    pElem.removeEventListener('click', logGreyP, false);
-    spanElem.removeEventListener('click', logGreySpan, false);
+    divElem.removeEventListener('click', event => {
+        event.stopPropagation();
+    });
 
-    divElem.removeEventListener('click', logGreenDiv);
-    pElem.removeEventListener('click', logGreenP);
-    spanElem.removeEventListener('click', logGreenSpan);
 };
 const pushToRemove = removeEventsList;
 removeBtn.removeEventListener('click', pushToRemove);

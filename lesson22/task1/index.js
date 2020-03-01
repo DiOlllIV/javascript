@@ -27,7 +27,7 @@ const attachEventsList = () => {
     pElem.addEventListener('click', logGreenP);
     spanElem.addEventListener('click', logGreenSpan);
 };
-attachEventsList();
+
 const pushToAttach = attachEventsList;
 attachBtn.addEventListener('click', pushToAttach);
 

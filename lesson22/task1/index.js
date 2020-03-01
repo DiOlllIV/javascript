@@ -33,9 +33,13 @@ attachBtn.addEventListener('click', pushToAttach);
 
 /* does not work, why? */
 const removeEventsList = () => {
-    divElem.removeEventListener('click', event => {
-        event.stopPropagation();
-    });
+    divElem.removeEventListener('click', logGreyDiv, { capture: true });
+    pElem.removeEventListener('click', logGreyP, true);
+    spanElem.removeEventListener('click', logGreySpan, true);
+
+    divElem.removeEventListener('click', logGreenDiv);
+    pElem.removeEventListener('click', logGreenP);
+    spanElem.removeEventListener('click', logGreenSpan);
 
 };
 const pushToRemove = removeEventsList;

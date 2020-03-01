@@ -46,7 +46,6 @@ const pushToRemove = removeEventsList;
 removeBtn.removeEventListener('click', pushToRemove);
 
 const clearEventsList = () => {
-
     eventsListElem.innerHTML = '';
 };
 const pushToClear = clearEventsList;

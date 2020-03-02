@@ -38,9 +38,8 @@ const attachBtn = document.querySelector('.create-task-btn');
 const createEvent = () => {
     const listItemElem = document.createElement('li');
     listItemElem.classList.add('list__item');
+    tasks.push({ text: '', done: false });
 
-
-    renderListItems(tasks);
 };
 const pushToCreate = createEvent;
 attachBtn.addEventListener('click', pushToCreate);

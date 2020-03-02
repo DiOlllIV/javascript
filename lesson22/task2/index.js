@@ -6,7 +6,6 @@ const tasks = [
     { text: 'Buy meat', done: true },
 ];
 
-const checked = document.querySelector('checkbox');
 
 const renderListItems = listItems => {
     const listElem = document.querySelector('.list');
@@ -28,9 +27,23 @@ const renderListItems = listItems => {
 
             return listItemElem;
         });
-
     listElem.append(...listItemsElems);
 
 };
 
 renderListItems(tasks);
+
+
+const attachBtn = document.querySelector('.create-task-btn');
+const createEvent = () => {
+    const listItemElem = document.createElement('li');
+    listItemElem.classList.add('list__item');
+
+
+    renderListItems(tasks);
+};
+const pushToCreate = createEvent;
+attachBtn.addEventListener('click', pushToCreate);
+
+
+const confirmEvent = document.querySelector('list__item-checkbox');

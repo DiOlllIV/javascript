@@ -32,9 +32,10 @@ const renderListItems = listItems => {
 
 renderListItems(tasks);
 
+const listItem = document.querySelector('.list');
 const attachBtn = document.querySelector('.create-task-btn');
 const createEvent = () => {
-    const listItem = document.querySelector('.list');
+
     const input = document.querySelector('.task-input');
     if (!input.value) return false;
     tasks.unshift({ text: input.value, done: false });
@@ -51,7 +52,6 @@ const confirmItem = event => {
     const confirmItem = tasks.find(item =>
         item.text === event.target.parentNode.innerText);
     confirmItem.done = event.target.checked;
-    let listItem = document.querySelector('.list');
     listItem.innerHTML = '';
 
     renderListItems(tasks);

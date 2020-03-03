@@ -28,30 +28,33 @@ const renderListItems = listItems => {
             return listItemElem;
         });
     listElem.append(...listItemsElems);
-
 };
 
 renderListItems(tasks);
 
-
 const attachBtn = document.querySelector('.create-task-btn');
 const createEvent = () => {
-    const listItemElem = document.createElement('li');
-    listItemElem.classList.add('list__item');
-    const input = document.createElement('.task-input');
-    tasks.push({ text: input, done: false });
+    const listItem = document.querySelector('.list');
+    const input = document.querySelector('.task-input');
+    if (!input.value) return false;
+    tasks.unshift({ text: input.value, done: false });
+    listItem.innerHTML = '';
+    input.value = '';
 
-    /* renderListItems(tasks); */
-
+    renderListItems(tasks);
 };
 const pushToCreate = createEvent;
 attachBtn.addEventListener('click', pushToCreate);
 
+const confirmEvent = document.querySelector('.list');
+const confirmItem = event => {
+    const confirmItem = tasks.find(item =>
+        item.text === event.target.parentNode.innerText);
+    confirmItem.done = event.target.checked;
+    let listItem = document.querySelector('.list');
+    listItem.innerHTML = '';
 
-const confirmEvent = document.querySelector('list__item-checkbox');
-const confirmItem = () => {
-
+    renderListItems(tasks);
 };
-
 const pushToConfirm = confirmItem;
 confirmEvent.addEventListener('click', pushToConfirm);

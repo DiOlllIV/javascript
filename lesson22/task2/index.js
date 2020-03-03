@@ -36,7 +36,6 @@ renderListItems(tasks);
 const listItem = document.querySelector('.list');
 const attachBtn = document.querySelector('.create-task-btn');
 const createEvent = () => {
-
     const input = document.querySelector('.task-input');
     if (!input.value) return false;
     tasks.unshift({ text: input.value, done: false });

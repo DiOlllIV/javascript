@@ -2,7 +2,7 @@ const generateNumbersRange = (from, to) => {
     const result = [];
 
     for (let i = from; i <= to; i++) {
-        result.push(i)
+        result.push(i);
     }
 
     return result;
@@ -11,36 +11,35 @@ const generateNumbersRange = (from, to) => {
 const getLineSeats = () =>
     generateNumbersRange(1, 10)
     .map(seatNumber => `
-            <div 
-                class="sector__seat" 
+            <div
+                class="sector__seat"
                 data-seat-number="${seatNumber}"
             ></div>
-        `).join('');
+            `).join('');
 
 const getSectorLines = () => {
     const seatsString = getLineSeats();
 
     return generateNumbersRange(1, 10)
         .map(lineNumber => `
-                <div 
-                    class="sector__line" 
-                    data-line-number="${lineNumber}"
-                >${seatsString}</div>
+            <div
+                class="sector__line"
+                data-line-number="${lineNumber}"
+            >${seatsString}</div>
             `).join('');
 };
 
 const arenaElem = document.querySelector('.arena');
-
 const renderArena = () => {
     const lineString = getSectorLines();
 
     const sectorsString = generateNumbersRange(1, 3)
         .map(sectorNumber => `
-            <div 
-                class="sector" 
+            <div
+                class="sector"
                 data-sector-number="${sectorNumber}"
             >${lineString}</div>
-    `).join('');
+        `).join('');
 
     arenaElem.innerHTML = sectorsString;
 };

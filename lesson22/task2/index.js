@@ -9,6 +9,7 @@ const tasks = [
 
 const renderListItems = listItems => {
     const listElem = document.querySelector('.list');
+    listElem.innerHTML = '';
 
     const listItemsElems = listItems
         .sort((a, b) => a.done - b.done)
@@ -39,22 +40,18 @@ const createEvent = () => {
     const input = document.querySelector('.task-input');
     if (!input.value) return false;
     tasks.unshift({ text: input.value, done: false });
-    listItem.innerHTML = '';
     input.value = '';
 
     renderListItems(tasks);
 };
-const pushToCreate = createEvent;
-attachBtn.addEventListener('click', pushToCreate);
+attachBtn.addEventListener('click', createEvent);
 
 const confirmEvent = document.querySelector('.list');
 const confirmItem = event => {
     const confirmItem = tasks.find(item =>
-        item.text === event.target.parentNode.innerText);
+        item.text === event.target.parentNode.textContent);
     confirmItem.done = event.target.checked;
-    listItem.innerHTML = '';
 
     renderListItems(tasks);
 };
-const pushToConfirm = confirmItem;
-confirmEvent.addEventListener('click', pushToConfirm);
+confirmEvent.addEventListener('click', confirmItem);

@@ -33,7 +33,6 @@ const renderListItems = listItems => {
 
 renderListItems(tasks);
 
-
 const attachBtn = document.querySelector('.create-task-btn');
 const createEvent = () => {
     const input = document.querySelector('.task-input');

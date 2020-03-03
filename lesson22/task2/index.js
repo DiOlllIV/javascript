@@ -38,7 +38,10 @@ const attachBtn = document.querySelector('.create-task-btn');
 const createEvent = () => {
     const listItemElem = document.createElement('li');
     listItemElem.classList.add('list__item');
-    tasks.push({ text: '', done: false });
+    const input = document.createElement('.task-input');
+    tasks.push({ text: input, done: false });
+
+    /* renderListItems(tasks); */
 
 };
 const pushToCreate = createEvent;
@@ -46,3 +49,9 @@ attachBtn.addEventListener('click', pushToCreate);
 
 
 const confirmEvent = document.querySelector('list__item-checkbox');
+const confirmItem = () => {
+
+};
+
+const pushToConfirm = confirmItem;
+confirmEvent.addEventListener('click', pushToConfirm);

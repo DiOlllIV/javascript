@@ -1,4 +1,4 @@
-const weekDays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
 const dayOfWeek = (date, days) => {
     const day = new Date(date).getDate();

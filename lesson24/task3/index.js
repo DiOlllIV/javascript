@@ -1,6 +1,6 @@
 const getDiff = (startDate, endDate) => {
 
-    diff = new Date(startDate) - new Date(endDate);
+    const diff = new Date(startDate) - new Date(endDate);
 
     const daysDiff = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hourDiff = Math.floor((diff / 1000 / 60 / 60) % 24);

@@ -10,7 +10,7 @@ const getDiff = (startDate, endDate) => {
     const minDiff = Math.floor((diff / 1000 / 60) % 60);
     const secDiff = Math.floor((diff / 1000) % 60);
 
-    return `${Math.abs(daysDiff)}d ${Math.abs(hourDiff)}h ${Math.abs(minDiff)}m ${Math.abs(secDiff)}s`;
+    return `${daysDiff}d ${hourDiff}h ${minDiff}m ${secDiff}s`;
 };
 
 /* console.log(getDiff('1993-03-04 22:22:22', '1992-03-04 00:00:00')); */

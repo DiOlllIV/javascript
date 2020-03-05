@@ -11,7 +11,7 @@ const renderListItems = listItems => {
     listElem.innerHTML = '';
 
     const listItemsElems = listItems
-        .sort((a, b) => a.date - b.date)
+        .sort((a, b) => b.date - a.date)
         .sort((a, b) => a.done - b.done)
         .sort((a, b) => b.dateDone - a.dateDone)
         .map(({ text, done, date }) => {

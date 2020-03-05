@@ -16,9 +16,9 @@ const renderListItems = listItems => {
                 return a.done - b.done;
             };
             if (a.done) {
-                return new Date(b.dateEnd) - new Date(a.dateEnd);
+                return new Date(b.dateDone) - new Date(a.dateDone);
             }
-            return new Date(b.dateStart) - new Date(a.dateStart);
+            return new Date(b.date) - new Date(a.date);
         })
         .map(({ text, done, date }) => {
             const listItemElem = document.createElement('li');

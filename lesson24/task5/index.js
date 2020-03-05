@@ -13,7 +13,7 @@ const renderListItems = listItems => {
     const listItemsElems = listItems
         .sort((a, b) => a.date - b.date)
         .sort((a, b) => a.done - b.done)
-        .sort((a, b) => a.dateDone - b.dateDone)
+        .sort((a, b) => b.dateDone - a.dateDone)
         .map(({ text, done, date }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');

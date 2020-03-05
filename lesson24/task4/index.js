@@ -1,10 +1,12 @@
-const students = [
+/* const students = [
     { name: 'James', birthDate: '11/11/1968' },
     { name: 'Tom', birthDate: '01/15/2010' },
     { name: 'Ben', birthDate: '01/17/2008' },
+    { name: 'Pen', birthDate: '02/17/2008' },
+    { name: 'Jen', birthDate: '01/18/2008' },
     { name: 'Sam', birthDate: '03/15/2010' },
 ];
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']; */
 
 export const studentsBirthDays = students => {
     const sortedStudents = students.sort((a, b) => new Date(a.birthDate) - new Date(b.birthDate))

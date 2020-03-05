@@ -11,15 +11,9 @@ const renderListItems = listItems => {
     listElem.innerHTML = '';
 
     const listItemsElems = listItems
-        .sort((a, b) => {
-            if (a.done - b.done !== 0) {
-                return a.done - b.done;
-            };
-            if (a.done) {
-                return new Date(b.dateDone) - new Date(a.dateDone);
-            }
-            return new Date(b.date) - new Date(a.date);
-        })
+        .sort((a, b) => b.date - a.date)
+        .sort((a, b) => a.done - b.done)
+        .sort((a, b) => b.dateDone - a.dateDone)
         .map(({ text, done, date }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');

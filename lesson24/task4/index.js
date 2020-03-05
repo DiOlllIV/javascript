@@ -6,7 +6,7 @@ const students = [
 ];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const studentsBirthDays = students => {
+export const studentsBirthDays = students => {
     const res = students.sort((a, b) => new Date(a.birthDate) - new Date(b.birthDate))
         .reduce((acc, { name, birthDate }) => {
             const monthsName = months[new Date(birthDate).getMonth()];

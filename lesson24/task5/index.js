@@ -1,4 +1,10 @@
-const tasks = [];
+const tasks = [
+    { text: 'Buy milk', done: false, date: new Date('Feb 23, 2020'), dateDone: undefined },
+    { text: 'Pick up Tom from airport', done: false, date: new Date(), dateDone: undefined },
+    { text: 'Visit party', done: false, date: new Date(), dateDone: undefined },
+    { text: 'Visit doctor', done: true, date: new Date(), dateDone: new Date() },
+    { text: 'Buy meat', done: true, date: new Date(), dateDone: new Date() },
+];
 
 const renderListItems = listItems => {
     const listElem = document.querySelector('.list');

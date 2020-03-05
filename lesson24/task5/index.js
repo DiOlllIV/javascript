@@ -1,9 +1,9 @@
 const tasks = [
-    { text: 'Buy milk', done: false, date: new Date('Feb 23, 2020'), dateDone: undefined },
-    { text: 'Pick up Tom from airport', done: false, date: new Date(), dateDone: undefined },
-    { text: 'Visit party', done: false, date: new Date(), dateDone: undefined },
-    { text: 'Visit doctor', done: true, date: new Date(), dateDone: new Date() },
-    { text: 'Buy meat', done: true, date: new Date(), dateDone: new Date() },
+    { text: 'Buy milk', done: false, dateStart: new Date('Feb 23, 2020'), dateEnd: undefined },
+    { text: 'Pick up Tom from airport', done: false, dateStart: new Date(), dateEnd: undefined },
+    { text: 'Visit party', done: false, dateStart: new Date(), dateEnd: undefined },
+    { text: 'Visit doctor', done: true, dateStart: new Date(), dateEnd: new Date() },
+    { text: 'Buy meat', done: true, dateStart: new Date(), dateEnd: new Date() },
 ];
 
 const renderListItems = listItems => {
@@ -11,9 +11,15 @@ const renderListItems = listItems => {
     listElem.innerHTML = '';
 
     const listItemsElems = listItems
-        .sort((a, b) => b.date - a.date)
-        .sort((a, b) => a.done - b.done)
-        .sort((a, b) => b.dateDone - a.dateDone)
+        .sort((a, b) => {
+            if (a.done - b.done !== 0) {
+                return a.done - b.done;
+            };
+            if (a.done) {
+                return new Date(b.dateEnd) - new Date(a.dateEnd);
+            }
+            return new Date(b.dateStart) - new Date(a.dateStart);
+        })
         .map(({ text, done, date }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
@@ -38,7 +44,7 @@ const attachBtn = document.querySelector('.create-task-btn');
 const createEvent = () => {
     const input = document.querySelector('.task-input');
     if (!input.value) return false;
-    tasks.unshift({ text: input.value, done: false, date: new Date(), dateComplited: undefined });
+    tasks.unshift({ text: input.value, done: false, dateStart: new Date(), dateEnd: undefined });
     input.value = '';
 
     renderListItems(tasks);
@@ -50,7 +56,7 @@ const confirmItem = event => {
     const confirmItem = tasks.find(item =>
         item.text === event.target.parentNode.textContent);
     confirmItem.done = event.target.checked
-    confirmItem.dateDone = confirmItem.done ? new Date() : undefined;
+    confirmItem.dateEnd = confirmItem.done ? new Date() : undefined;
     renderListItems(tasks);
 };
 confirmEvent.addEventListener('click', confirmItem);

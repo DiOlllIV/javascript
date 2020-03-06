@@ -2,6 +2,7 @@ const getRandomNumbers = (length, start, end) => {
     if (Math.floor(start) >= Math.floor(end))
         return null;
 
+    // let arr = [length];
     /* let arr = [];
     arr.length = length; */
 

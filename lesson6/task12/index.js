@@ -1,14 +1,18 @@
-/* let arr = [3, 4, 5, 6, 7, 0, 1, 2];
- */
-function cloneArr(arr) {
-    let arrClone = [];
-    for (let i = 0; i < arr.length; ++i) {
-        arrClone.push(arr[i]);
+function removeDuplicates(array) {
+    let arrayOfUniques = [];
+
+    for (let i = 0; i < array.length; ++i) {
+        arrayOfUniques.push(array[i]);
+        for (let j = i + 1; j < array.length; ++j) {
+
+            if (array[j] === array[i]) {
+                arrayOfUniques.pop(array[j]);
+            }
+        }
+
     }
-    return arrClone;
+    return arrayOfUniques;
+
 }
 
-/* const arrClone = cloneArr(arr);
-
-console.log(arrClone);
-console.log(arr); */
+/* console.log(uniqueCount([1, 2, 3, 1, 2, 3, 10, 11, 3])); */

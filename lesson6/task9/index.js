@@ -1,18 +1,18 @@
-function removeDuplicates(array) {
-    let arrayOfUniques = [];
+/* const arr = [1, 2, 3, 4];  */
 
-    for (let i = 0; i < array.length; ++i) {
-        arrayOfUniques.push(array[i]);
-        for (let j = i + 1; j < array.length; ++j) {
-
-            if (array[j] === array[i]) {
-                arrayOfUniques.pop(array[j]);
-            }
-        }
-
+function reverseArray(arr) {
+    if (!Array.isArray(arr)) {
+        return null;
     }
-    return arrayOfUniques;
 
+    let arrayReverse = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        arrayReverse.unshift(arr[i]);
+    }
+
+    return arrayReverse;
 }
 
-/* console.log(uniqueCount([1, 2, 3, 1, 2, 3, 10, 11, 3])); */
+/* const arrayRevers = reversArray(arr);
+console.log(arrayRevers);  */

@@ -1,18 +1,18 @@
-function checker(arr) {
-    let minNum = arr[0];
-    let maxNum = arr[0];
+function uniqueCount(array) {
+    let arrayOfUniques = [];
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < array.length; ++i) {
+        arrayOfUniques.push(array[i]);
+        for (let j = i + 1; j < array.length; ++j) {
 
-        if (arr[i] < minNum)
-            minNum = arr[i];
+            if (array[j] === array[i]) {
+                arrayOfUniques.pop(array[j]);
+            }
+        }
 
-        if (arr[i] > maxNum)
-            maxNum = arr[i];
     }
-
-    return minNum + maxNum > 1000;
+    return arrayOfUniques.length;
 
 }
-/* 
-console.log(checker([5, 7, 88, 10, 4, 3, 6])) */
+
+/* console.log(uniqueCount([1, 2, 3, 1, 2, 3, 10, 11, 3])); */

@@ -1,18 +1,18 @@
-/* const arr = [1, 2, 3, 4];  */
+/* const arr = [1, 2, 3, 4]; */
 
-function reverseArray(arr) {
+function squareArray(arr) {
+    let arrayInSquare = [];
+
     if (!Array.isArray(arr)) {
         return null;
     }
 
-    let arrayReverse = [];
-
     for (let i = 0; i < arr.length; i++) {
-        arrayReverse.unshift(arr[i]);
+        arrayInSquare.push(Math.pow(arr[i], 2));
     }
 
-    return arrayReverse;
+    return arrayInSquare;
 }
 
-/* const arrayRevers = reversArray(arr);
-console.log(arrayRevers);  */
+/* const arrayInSquare = squareArray(arr);
+console.log(arrayInSquare); */

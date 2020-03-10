@@ -6,7 +6,7 @@ function increaseEvenEl(arr, delta) {
     for (let num of arr) {
         if (num % 2 === 0)
             newArr.push(num += delta);
-        newArr.push(num);
+        else newArr.push(num);
     }
 
     return newArr;

@@ -2,8 +2,12 @@ function checkSum(arr) {
     if (!Array.isArray(arr))
         return null;
 
+    let sum = 0;
+
     for (num of arr) {
-        num += num;
+        sum += num;
     }
-    return num;
+    if (sum > 100)
+        return true;
+    else return false;
 };

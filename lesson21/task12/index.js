@@ -1,4 +1,4 @@
-function squaredNumber() {
+function squaredNumbers() {
     const liArr = document.querySelectorAll('.number');
 
     for (let elem of liArr) {
@@ -7,4 +7,4 @@ function squaredNumber() {
     }
 };
 
-export { squaredNumber };
+export { squaredNumbers };

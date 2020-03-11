@@ -1,11 +1,12 @@
 function setButton(buttonText) {
     const body = document.querySelector('body');
+    body.innerHTML = '<button></button>';
+    const button = document.querySelector('button');
+    button.innerHTML = buttonText;
 
-    /* body.textContent = buttonText; */
-    body.innerHTML += buttonText;
 };
 
-setButton("<button>button text</button>");
+/* setButton("button text"); */
 
 
 export { setButton };

@@ -1,13 +1,15 @@
-export default function() {
+function getTitleElement() {
     const title = document.querySelector('.title');
 
     console.log(title);
     return title;
 };
 
-export default function() {
-    const input = document.querySelector('input');
+function getInputElement() {
+    const input = document.querySelector('input[type=text]');
 
     console.dir(input);
     return input;
 };
+
+export { getInputElement, getTitleElement }

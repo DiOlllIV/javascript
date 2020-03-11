@@ -22,7 +22,6 @@ function finishList() {
 
 };
 
-finishList();
 
 
 

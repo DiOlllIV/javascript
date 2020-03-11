@@ -3,3 +3,7 @@ function clearList() {
 
     categories.innerHTML = '';
 };
+
+
+
+export { clearList };

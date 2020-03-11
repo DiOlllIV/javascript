@@ -8,4 +8,4 @@ function setButton(buttonText) {
 setButton("<button>button text</button>");
 
 
-/* export { setButton }; */
+export { setButton };

@@ -9,7 +9,6 @@ function finishList() {
     li4.innerText = '4';
 
 
-
     const li6 = document.createElement('li');
     li6.innerText = '6';
 
@@ -23,6 +22,7 @@ function finishList() {
 
 };
 
+finishList();
 
 
 

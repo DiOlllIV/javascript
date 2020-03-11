@@ -1,7 +1,7 @@
 function getTitleElement() {
     const title = document.querySelector('.title');
 
-    console.log(title);
+    console.dir(title);
     return title;
 };
 

@@ -1,4 +1,4 @@
 const task = document.querySelector('.task-status');
 const taskStatus = () => console.log(task.checked);
 
-task.addEventListener('click', taskStatus);
+task.addEventListener('change', taskStatus);

@@ -1,9 +1,9 @@
-let isConfirmed = false;
+let isClicked = false;
 const button = document.querySelector('.single-use-btn');
 const oneClick = () => {
-    if (!isConfirmed) {
+    if (!isClicked) {
         console.log('clicked');
-        isAppend = true;
+        isClicked = true;
     }
 };
 

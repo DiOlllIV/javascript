@@ -1,6 +1,6 @@
-import { getAdults } from './index.js';
+import { pickProps } from './index.js';
 
-it('Should return object with adult users', () => {
-    const result = getAdults({ 'Joe': 19, 'Tom': 17, 'Bob': 18, });
-    expect(result).toEqual({ 'Joe': 19, 'Bob': 18 });
+it('Should return object with keys and element like element in array', () => {
+    const result = pickProps({ a: 1, b: 2, c: 3 }, ['a', 'b']);
+    expect(result).toEqual({ a: 1, b: 2 });
 });

@@ -1,21 +1,14 @@
-export const getAdults = users => {
-    let adults = {};
+const pickProps = (obj, arr) => {
 
-    for (let key in users) {
-        if (users[key] >= 18) {
+    let object = {};
 
-            adults[key] = users[key];
-        }
-    }
+    arr.forEach(elm => {
+        object[elm] = obj[elm];
+    });
 
-    return adults;
+    return object;
 };
 
-/* const users = {
-    'Joe': 19,
-    'Tom': 17,
-    'Bob': 18,
-} */
-
-/* console.log(getAdults(users));
-console.log(users); */
+/* const arr = ['a', 'b'];
+const obj = { a: 1, b: 2, c: 3 };
+console.log(pickProps(obj, arr)); */

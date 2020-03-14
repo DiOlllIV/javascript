@@ -7,7 +7,7 @@ const addPropertyV1 = (userData, userId) => {
     return userData
 };
 const addPropertyV2 = (userData, userId) =>
-    Object.assign(userData, userData.id = userId);
+    Object.assign({}, userData, userData.id = userId);
 
 const addPropertyV3 = (userData, userId) => {
     const objCopy = Object.assign({}, userData);

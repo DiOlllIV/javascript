@@ -21,11 +21,14 @@ const obj4 = {
 
 const compareObjects = (obj1, obj2) => {
 
-    for (let key1 in obj1) {
+    const arr1 = Object.values(obj1);
+    const arr2 = Object.values(obj2);
 
-        for (let key2 in obj2) {
+    for (let elem1 in arr1) {
 
-            return (key1 === key2 && obj1[key1] === obj2[key2]) ?
+        for (let elem2 in arr2) {
+
+            return (arr1.length === arr2.length && elem1 === elem2) ?
                 true : false;
         }
 

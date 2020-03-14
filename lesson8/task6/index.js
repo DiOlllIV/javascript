@@ -1,6 +1,6 @@
 /* const user = {
     name: "Sam",
-} */
+}; */
 
 const addPropertyV1 = (userData, userId) => {
     userData.id = userId;

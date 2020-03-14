@@ -1,6 +1,6 @@
-const user = {
+/* const user = {
     name: "Sam",
-}
+}; */
 
 const addPropertyV1 = (obj, key, value) => {
     obj[key] = value;
@@ -25,7 +25,7 @@ const addPropertyV4 = (obj, key, value) => {
     return objCopy;
 };
 
-const v1 = addPropertyV1(user, 1, 1);
+/* const v1 = addPropertyV1(user, 1, 1);
 const v2 = addPropertyV2(user, 2, 2);
 const v3 = addPropertyV3(user, 3, 3);
-const v4 = addPropertyV4(user, 4, 4);
+const v4 = addPropertyV4(user, 4, 4); */

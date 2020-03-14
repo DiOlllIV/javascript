@@ -22,11 +22,12 @@ const obj4 = {
 const compareObjects = (obj1, obj2) => {
     for (let key1 in obj1) {
         for (let key2 in obj2) {
-            if (key1 === key2 && obj1[key1] === obj[key2]) {
-                return true;
-            } else return false;
+            return (key1 === key2 && obj1[key1] === obj2[key2]) ?
+                true : false;
         }
+
     }
+
 };
 
 

@@ -24,10 +24,10 @@ const compareObjects = (obj1, obj2) => {
     const arr1 = Object.values(obj1);
     const arr2 = Object.values(obj2);
 
-    for (let elem1 in arr1) {
-
-        for (let elem2 in arr2) {
-
+    for (let elem1 of arr1) {
+        console.log(elem1);
+        for (let elem2 of arr2) {
+            console.log(elem2);
             return (arr1.length === arr2.length && elem1 === elem2) ?
                 true : false;
         }

@@ -1,5 +1,5 @@
-const keys = ['name', 'addres', 'age'];
-const values = ['Bob', 'Ukraine', 34];
+/* const keys = ['name', 'addres', 'age'];
+const values = ['Bob', 'Ukraine', 34]; */
 
 const buildObject = (keysList, valuesList) => {
 
@@ -16,4 +16,4 @@ const buildObject = (keysList, valuesList) => {
 };
 
 
-buildObject(keys, values);
+/* buildObject(keys, values); */

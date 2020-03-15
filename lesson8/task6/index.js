@@ -9,8 +9,9 @@ const addPropertyV1 = (userData, userId) => {
 };
 
 const addPropertyV2 = (userData, userId) => {
-    const id = 'id';
-    const copyObj = Object.assign({}, userData, userData[id] = userId);
+    userData.id = userId
+    const copyObj = Object.assign({}, userData);
+
     return copyObj;
 };
 

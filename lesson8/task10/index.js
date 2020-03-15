@@ -12,7 +12,7 @@ const buildObject = (keysList, valuesList) => {
 
     const obj = Object.fromEntries(arr);
 
-    console.log(obj);
+    return obj;
 };
 
 

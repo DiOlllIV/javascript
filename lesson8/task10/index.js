@@ -9,10 +9,11 @@ const buildObject = (keysList, valuesList) => {
         arr.push([keysList[i], valuesList[i]]);
 
     }
+
     const map = new Map(arr);
     const obj = Object.fromEntries(map);
-    console.log(obj);
 
+    console.log(obj);
 };
 
 

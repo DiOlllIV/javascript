@@ -27,8 +27,8 @@ const compareObjects = (obj1, obj2) => {
 
         for (let elem2 in obj2) {
 
-            let boolean = (length1 === length2 &&
-                    obj1[elem1] === obj2[elem2] &&
+            let boolean = length1 === length2 &&
+                (obj1[elem1] === obj2[elem2] &&
                     elem1 === elem2) ?
                 true : false;
 

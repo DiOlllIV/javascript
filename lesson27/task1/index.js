@@ -5,7 +5,7 @@ export const getLocalStorageData = () => {
 
             try {
                 newValue = JSON.parse(value);
-            } catch {
+            } catch (e) {
                 newValue = value;
             }
 

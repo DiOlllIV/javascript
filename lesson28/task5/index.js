@@ -7,7 +7,7 @@ export const shmoment = date => {
                 case 'years':
                     res.setFullYear(res.getFullYear() + value);
                     return this;
-                case 'month':
+                case 'months':
                     res.setMonth(res.getMonth() + value);
                     return this;
                 case 'days':
@@ -34,7 +34,7 @@ export const shmoment = date => {
                 res.setFullYear(res.getFullYear() - value);
                 return this;
             }
-            if (unit === 'month') {
+            if (unit === 'months') {
                 res.setMonth(res.getMonth() - value);
                 return this;
             }
@@ -69,4 +69,4 @@ export const shmoment = date => {
     return calc;
 };
 
-shmoment(new Date(2020, 0, 7, 17, 17, 17)).add('minutes', 2).add('days', 8).substract('years', 1).result()
+/* shmoment(new Date(2020, 0, 7, 17, 17, 17)).add('minutes', 2).add('days', 8).substract('years', 1).result(); */

@@ -29,7 +29,7 @@ export const shmoment = date => {
                     return `Incorect unit of time`;
             }
         },
-        substract(unit, value) {
+        subtract(unit, value) {
             if (unit === 'years') {
                 res.setFullYear(res.getFullYear() - value);
                 return this;
@@ -69,4 +69,4 @@ export const shmoment = date => {
     return calc;
 };
 
-/* shmoment(new Date(2020, 0, 7, 17, 17, 17)).add('minutes', 2).add('days', 8).substract('years', 1).result(); */
+/* shmoment(new Date(2020, 0, 7, 17, 17, 17)).add('minutes', 2).add('days', 8).subtract('years', 1).result(); */

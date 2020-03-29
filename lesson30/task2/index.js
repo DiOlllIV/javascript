@@ -1,3 +1,16 @@
+export const addImageV2 = imgSrc => {
+    return new Promise((resolve, reject) => {
+        addImage(imgSrc, (error, data) => {
+            if (error) {
+                reject(error);
+                return;
+            }
+
+            resolve(data);
+        });
+    });
+};
+
 const addImage = (url, callback) => {
     const img = document.createElement('img');
     img.setAttribute('alt', 'User avatar');
@@ -16,17 +29,4 @@ const addImage = (url, callback) => {
     img.addEventListener('load', onImageLoaded);
 
     img.addEventListener('error', onImageLoadError);
-};
-
-export const addImageV2 = imgSrc => {
-    return new Promise((resolve, reject) => {
-        addImage(imgSrc, (error, data) => {
-            if (error) {
-                reject(error);
-                return;
-            }
-
-            resolve(data);
-        });
-    });
 };

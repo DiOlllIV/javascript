@@ -34,7 +34,7 @@
 
     const getStartDate = days => new Date().setDate(new Date().getDate() - days);
 
-    const getMostActiveDevs = data => {
+    export const getMostActiveDevs = data => {
         const { days, userId, repoId } = data;
         const from = getStartDate(days);
 

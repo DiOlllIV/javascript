@@ -11,6 +11,7 @@ reportValidation = () => {
     else submitBtn.disabled = true;
 };
 
+
 loginForm.addEventListener('input', reportValidation);
 
 const validationUser = e => {

@@ -29,7 +29,7 @@ const validationUser = e => {
         })
         .then(response => response.json())
         .then(data => {
-            inputs.map(elem => elem.valu = '');
+            inputs.map(elem => elem.value = '');
             submitBtn.disabled = true;
             alert(JSON.stringify(data));
         })

@@ -22,7 +22,7 @@ const createValidation = userValue =>
 const validationUser = e => {
     e.preventDefault();
 
-    const dataObj = [...new FormData(form)]
+    const dataObj = [...new FormData(loginForm)]
         .reduce((acc, [key, value]) =>
             ({...acc, [key]: value }), {});
 

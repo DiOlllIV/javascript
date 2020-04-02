@@ -8,9 +8,6 @@ const errorText = document.querySelector('.error-text');
 reportValidation = () => {
     if (loginForm.reportValidity())
         submitBtn.disabled = false;
-    else submitBtn.disabled = true;
-
-    errorText.textContent = '';
 };
 
 loginForm.addEventListener('input', reportValidation);
@@ -41,4 +38,4 @@ const validationUser = e => {
 
 }
 
-submitBtn.addEventListener('submit', validationUser);
+submitBtn.addEventListener('click', validationUser);

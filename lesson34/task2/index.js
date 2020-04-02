@@ -14,7 +14,7 @@ const createValidation = userValue =>
     fetch(baseUrl, {
         method: 'POST',
         headers: {
-            'Content-Type': 'apllication/json;charset=utf-8'
+            'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify(userValue)
     });
@@ -22,11 +22,11 @@ const createValidation = userValue =>
 const validationUser = e => {
     e.preventDefault();
 
-    const dataObj = [...new FormData(loginForm)]
+    const userData = [...new FormData(loginForm)]
         .reduce((acc, [key, value]) =>
             ({...acc, [key]: value }), {});
 
-    createValidation(dataObj)
+    createValidation(userData)
         .then(response => response.json())
         .then(data => {
             alert(JSON.stringify(data));
@@ -37,5 +37,3 @@ const validationUser = e => {
             errorField.textContent = 'Failed to create user';
         });
 };
-
-submitBtn.addEventListener('submit', validationUser);

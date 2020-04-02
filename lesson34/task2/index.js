@@ -11,11 +11,13 @@ reportValidation = () => {
     else submitBtn.disabled = true;
 
     errorText.textContent = '';
-}
+};
+
 loginForm.addEventListener('input', reportValidation);
 
 const validationUser = e => {
     e.preventDefault();
+
     const userValue = [...new FormData(loginForm)]
         .reduce((acc, [key, value]) =>
             ({...acc, [key]: value }), {});
@@ -23,7 +25,7 @@ const validationUser = e => {
     fetch(baseUrl, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json:charset=utf-8',
+                'Content-Type': 'application/json;charset=utf-8',
             },
             body: JSON.stringify(userValue)
         })

@@ -5,12 +5,11 @@ const inputs = document.querySelectorAll('input');
 const submitBtn = document.querySelector('.submit-button');
 const errorText = document.querySelector('.error-text');
 
-reportValidation = () => {
+const reportValidation = () => {
     if (loginForm.reportValidity())
         submitBtn.disabled = false;
     else submitBtn.disabled = true;
 };
-
 
 loginForm.addEventListener('input', reportValidation);
 
@@ -30,7 +29,7 @@ const validationUser = e => {
         })
         .then(response => response.json())
         .then(data => {
-            inputs.map(elem => elem.value = '');
+            inputs.forEach(elem => elem.value = '');
             alert(JSON.stringify(data));
         })
         .catch(() => {

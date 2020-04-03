@@ -1,4 +1,4 @@
-const baseUrl = 'https://crudcrud.com/api/8e1527448f6c49ce90a6ec5e58d8d97f/tasks'
+const baseUrl = 'https://5e870549781e48001676b644.mockapi.io/api/v1/loginForm'
 
 const loginForm = document.querySelector('.login-form');
 const inputs = document.querySelectorAll('input');

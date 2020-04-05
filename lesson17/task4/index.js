@@ -8,7 +8,7 @@ export function sayName() {
 }
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя студента 
-sayName.call(student, student.name);
+sayName.call(student);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
@@ -44,7 +44,7 @@ export function getPopulation(population) {
 // вызовите ф-цию getPopulation так, чтобы она вернула 
 // 'Population in Ukraine is 43000'
 // используйте объект country
-getPopulation.call(country, 43e3, country.countryName);
+getPopulation.call(country, 43000, country.countryName);
 
 
 

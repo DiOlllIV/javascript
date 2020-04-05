@@ -8,11 +8,11 @@ export function sayName() {
 }
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя студента 
-export const say = sayName.bind(student, student.name);
+export const sayStudentName = sayName.bind(student, student.name);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
-export const name = sayName.bind(new Object(student), student.name = 'Bruce');
+export const sayBruceName = sayName.bind(new Object(student), student.name = 'Bruce');
 
 
 
@@ -28,7 +28,7 @@ export function greeting(firstName, lastName) {
 // вызовите ф-цию greeting так, чтобы в консоль вывелось 
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
-export const greet = greeting.bind(company, 'Bob', 'Marley', company.companyName);
+export const sayBobMarley = greeting.bind(company, 'Bob', 'Marley', company.companyName);
 
 
 /* ===> 3 <=== */
@@ -44,7 +44,7 @@ export function getPopulation(population) {
 // вызовите ф-цию getPopulation так, чтобы она вернула 
 // 'Population in Ukraine is 43000'
 // используйте объект country
-export const population = getPopulation.bind(country, 43e3, country.countryName);
+export const getUkrainePopulation = getPopulation.bind(country, 43e3, country.countryName);
 
 
 
@@ -69,4 +69,4 @@ const anotherTransaction = {
 // вызовите метод transaction.printTransaction так, чтобы в консоль вывелось
 // '400 USD - buy on NASDAQ'
 // используйте объект anotherTransaction как контекст
-export const transh = transaction.printTransaction.bind(anotherTransaction, anotherTransaction.amount, anotherTransaction.currency, anotherTransaction.operation, anotherTransaction.exchange);
+export const printSpecialTransaction = transaction.printTransaction.bind(anotherTransaction, anotherTransaction.amount, anotherTransaction.currency, anotherTransaction.operation, anotherTransaction.exchange);

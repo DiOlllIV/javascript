@@ -8,7 +8,7 @@ export function sayName() {
 }
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя студента 
-export const sayStudentName = sayName.bind(student, student.name);
+export const sayStudentName = sayName.bind(student);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
@@ -28,7 +28,7 @@ export function greeting(firstName, lastName) {
 // вызовите ф-цию greeting так, чтобы в консоль вывелось 
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
-export const sayBobMarley = greeting.bind(company, 'Bob', 'Marley', company.companyName);
+export const sayBobName = greeting.bind(company, 'Bob', 'Marley', company.companyName);
 
 
 /* ===> 3 <=== */

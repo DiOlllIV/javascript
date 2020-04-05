@@ -8,7 +8,7 @@ export function sayName() {
 }
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя студента 
-sayName.call(student);
+sayName.call(student, student.name);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
@@ -21,7 +21,7 @@ const company = {
     companyName: 'Microsoft'
 };
 
-function greeting(firstName, lastName) {
+export function greeting(firstName, lastName) {
     console.log(`Hello, ${firstName} ${lastName}. Welcome to the ${this.companyName}`);
 }
 
@@ -37,7 +37,7 @@ const country = {
     capital: 'Kyiv'
 };
 
-function getPopulation(population) {
+export function getPopulation(population) {
     return `Population in ${this.countryName} is ${population}`;
 }
 

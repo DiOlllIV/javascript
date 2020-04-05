@@ -20,9 +20,7 @@
       * и должна принимать 2 числа и возвращать из произведение
       */
      const mult = { operation: '*' };
-     const multiplier = calculator.bind(mult);
-
-
+     export const multiplier = calculator.bind(mult);
 
      /*
       * Ф-ция summator должна быть создана на основе calculator
@@ -30,11 +28,11 @@
       * и должна принимать 2 числа и возвращать из сумму
       */
      const sum = { operation: '+' };
-     const summator = calculator.bind(sum);
+     export const summator = calculator.bind(sum);
 
      /*
       * Ф-ция twice должна быть создана на основе calculator
       * с использования .bind
       * и должна принимать 1 число и возвращать это число умноженное на 2
       */
-     const twice = calculator.bind(mult, 2);
+     export const twice = calculator.bind(mult, 2);

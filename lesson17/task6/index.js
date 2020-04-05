@@ -28,8 +28,7 @@ export function greeting(firstName, lastName) {
 // вызовите ф-цию greeting так, чтобы в консоль вывелось 
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
-export const sayBobName = greeting.bind(company, 'Bob', 'Marley');
-console.log(sayBobName);
+export const sayBruceName = greeting.bind(company, 'Bob', 'Marley');
 
 /* ===> 3 <=== */
 const country = {

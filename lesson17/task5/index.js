@@ -44,7 +44,7 @@ export function getPopulation(population) {
 // вызовите ф-цию getPopulation так, чтобы она вернула 
 // 'Population in Ukraine is 43000'
 // используйте объект country
-console.log(getPopulation.apply(country, [43000, country.countryName]));
+console.log(getPopulation.apply(country, [43e3, country.countryName]));
 
 
 

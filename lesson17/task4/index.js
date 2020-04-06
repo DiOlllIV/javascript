@@ -28,7 +28,7 @@ export function greeting(firstName, lastName) {
 // вызовите ф-цию greeting так, чтобы в консоль вывелось 
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
-greeting.call(company, 'Bob', 'Marley', company.companyName);
+greeting.call(company, 'Bob', 'Marley');
 
 
 /* ===> 3 <=== */
@@ -44,7 +44,7 @@ export function getPopulation(population) {
 // вызовите ф-цию getPopulation так, чтобы она вернула 
 // 'Population in Ukraine is 43000'
 // используйте объект country
-getPopulation.call(country, 43e3, country.countryName);
+getPopulation.call(country, 43e3);
 
 
 
@@ -69,4 +69,4 @@ const anotherTransaction = {
 // вызовите метод transaction.printTransaction так, чтобы в консоль вывелось
 // '400 USD - buy on NASDAQ'
 // используйте объект anotherTransaction как контекст
-transaction.printTransaction.call(anotherTransaction, anotherTransaction.amount, anotherTransaction.currency, anotherTransaction.operation, anotherTransaction.exchange);
+transaction.printTransaction.call(anotherTransaction);

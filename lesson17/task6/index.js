@@ -12,7 +12,10 @@ export const sayStudentName = sayName.bind(student, student.name);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
-export const sayBruceName = sayName.bind(new Object(student), student.name = 'Bruce');
+const anotherStudent = {
+    name: 'Bruce',
+};
+export const sayBruceName = sayName.bind(anotherStudent, student.name);
 
 
 
@@ -28,7 +31,7 @@ export function greeting(firstName, lastName) {
 // вызовите ф-цию greeting так, чтобы в консоль вывелось 
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
-export const sayBruceName = greeting.bind(company, 'Bob', 'Marley', company.companyName);
+export const sayBobMarleyName = greeting.bind(company, 'Bob', 'Marley', company.companyName);
 
 
 /* ===> 3 <=== */

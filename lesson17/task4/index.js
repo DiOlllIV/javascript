@@ -12,7 +12,10 @@ sayName.call(student);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
-sayName.call(new Object(student), student.name = 'Bruce');
+const anotherStudent = {
+    name: 'Bruce',
+};
+sayName.call(anotherStudent);
 
 
 

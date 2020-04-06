@@ -1,4 +1,4 @@
-export const getUsersBlog = async usersArr => {
+export const getUsersBlogs = async usersArr => {
     try {
         const response = await usersArr.map(userId =>
             fetch(`https://api.github.com/users/${userId}`)

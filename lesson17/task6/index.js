@@ -31,7 +31,7 @@ export function greeting(firstName, lastName) {
 // вызовите ф-цию greeting так, чтобы в консоль вывелось 
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
-export const greetBobMarley = greeting.bind(company, 'Bob', 'Marley', company.companyName);
+export const specialGreeting = greeting.bind(company, 'Bob', 'Marley', company.companyName);
 
 
 /* ===> 3 <=== */

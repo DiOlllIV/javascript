@@ -4,20 +4,19 @@ const dayTransactions = [
     { currency: 'EUR', amount: 90, operation: 'sell' },
 ];
 
-const operationMapping = { buy: '+', sell: '-' };
-
-function getTotalBalance(transactionsList) {
-    const result = transactionsList.reduce(function(acc, transactionObj) {
-        const { currency, amount, operation } = transactionObj;
-        const valueStr = operationMapping[operation] + amount
-
-        acc[currency] = (acc[currency] || 0) + +valueStr
-
-        return acc;
+function getTotalBalance(transactions) {
+    const result = transactions.reduce(function(acc, transaction) {
+        const { currency, amount, operation } = transaction;
+        const oldAmount = acc[currency] || 0;
+        const newAmount =
+            operation === 'sell' ? oldAmount - amount : oldAmount + amount;
+        return {
+            ...acc,
+            [currency]: newAmount,
+        };
     }, {});
-
     return result;
-};
+}
 
 const result = getTotalBalance(dayTransactions);
 console.log(result);

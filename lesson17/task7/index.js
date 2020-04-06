@@ -19,16 +19,16 @@
       * с использования .bind
       * и должна принимать 2 числа и возвращать из произведение
       */
-     const mult = { operation: '*' };
-     export const multiplier = calculator.bind(mult);
+
+     export const multiplier = calculator.bind({ operation: '*' });
 
      /*
       * Ф-ция summator должна быть создана на основе calculator
       * с использования .bind
       * и должна принимать 2 числа и возвращать из сумму
       */
-     const sum = { operation: '+' };
-     export const summator = calculator.bind(sum);
+
+     export const summator = calculator.bind({ operation: '+' });
 
      /*
       * Ф-ция twice должна быть создана на основе calculator

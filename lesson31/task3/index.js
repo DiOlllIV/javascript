@@ -1,6 +1,28 @@
-export const delay = interval =>
-    new Promise((resolve) => {
-        setTimeout(() => {
-            resolve();
-        }, interval);
+const successPromise = new Promise(resolve => {
+    resolve(32);
+});
+
+/*
+ * исправьте цепочку промисов, чтобы в последнем обработчике вывелось нужное число
+ */
+
+successPromise
+    .then(number => {
+        const halfNumber = number / 2;
+        return halfNumber;
+    })
+    .then(number => (number * number))
+    .then(result => {
+        console.log(result); // 256
     });
+
+/*
+ * исправьте цепочку промисов, чтобы в последнем обработчике вывелось нужное число
+ */
+successPromise
+    .then(number => (number * 10))
+    .then(result => {
+        console.log(result); // 320
+    });
+
+console.log('!!! Обратите внимание, что этот текст вывелся самым первым. Ведь это синхронный код, а промисы - асинхронны !!!');

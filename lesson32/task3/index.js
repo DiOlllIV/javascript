@@ -3,7 +3,11 @@
  */
 
 const makePromise = number =>
-    new Promise(resolve => resolve(number));
+    new Promise(resolve => {
+        resolve(number);
+        return Promise;
+    });
+
 
 /*
  * пример использования

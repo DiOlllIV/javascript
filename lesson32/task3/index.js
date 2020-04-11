@@ -2,11 +2,9 @@
  * ф-ция makePromise должна вернуть промис со значением переданным в ф-цию
  */
 
-const makePromise = number =>
-    new Promise(resolve => {
-        resolve(number);
-        return Promise;
-    });
+export const makePromise = number =>
+    new Promise(resolve =>
+        resolve(number));
 
 
 /*

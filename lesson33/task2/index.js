@@ -12,10 +12,10 @@ export const getTaskById = (id) =>
             
 
 /* примеры использования */
-getTasksList().then(tasksList => {
+/* getTasksList().then(tasksList => {
     console.log(tasksList); // [{"id":"1", "done":false ... }, {"id":"2", "done":true ... }, ...]
 });
 
 getTaskById('1').then(taskData => {
     console.log(taskData); // {"id":"1", "done":false ... }
-});
+}); */

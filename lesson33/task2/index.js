@@ -6,14 +6,14 @@ const taskMap = task =>
 [task].map(({id, done, ...rest}) =>
     ({id,done, ...rest}));
 
- const getTasksList = () =>
+export const getTasksList = () =>
     fetch(baseUrl)
     .then(response =>
         response.json())
     .then(tasksList =>
         tasksMap(tasksList));
 
-const getTaskById = (id) =>
+export const getTaskById = (id) =>
     fetch(`${baseUrl}/${id}`)
     .then(response =>
         response.json())

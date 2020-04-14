@@ -1,14 +1,25 @@
 const baseUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/tasks';
 
-export const getTasksList = () =>
-fetch(baseUrl)
-.then(response =>
-    response.json());
+const tasksMap = tasksList =>
+tasksList.map(({id, done, ...rest}) => ({id, done, ...rest}));
+const taskMap = task => 
+[task].map(({id, done, ...rest}) =>
+    ({id,done, ...rest}));
 
-export const getTaskById = (id) =>
-fetch(`https://api.github.com/users/${id}`)
-.then(response =>
-    response.json());
+ const getTasksList = () =>
+    fetch(baseUrl)
+    .then(response =>
+        response.json())
+    .then(tasksList =>
+        tasksMap(tasksList));
+
+const getTaskById = (id) =>
+    fetch(`${baseUrl}/${id}`)
+    .then(response =>
+        response.json())
+    .then(task => taskMap(task))
+    .then(task => task[0])
+            
 
 /* примеры использования */
 getTasksList().then(tasksList => {
